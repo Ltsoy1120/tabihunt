@@ -1,0 +1,42 @@
+@import "../../../../assets/scss/bundle.scss";
+@import "../../../../assets/scss/base.scss";
+
+
+.reportsSearch {
+    @include Frame;
+    width: 1160px;
+    height: fit-content;
+    margin: 0 auto;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.line {
+    border-bottom: 1px solid $color-stroke-gray;
+    margin-bottom: 20px;
+}
+.btnGroupReports {
+    display: flex;
+    div {
+        width: 300px;
+        height: 56px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.selectReportsType {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    button {
+        @include Typography(16px, 500, black);
+        text-wrap: nowrap;
+    }
+}
+
+.createReports {
+    height: 56px;
+    padding: 0 20px;
+}

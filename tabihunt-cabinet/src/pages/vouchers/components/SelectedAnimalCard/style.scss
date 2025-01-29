@@ -1,0 +1,52 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.selected-limit-card {
+  @include Frame;
+
+  h3 {
+    @include Typography($font-size-3, 600, $color-dark-gray);
+  }
+
+  h4 {
+    @include Typography($font-size-4, 600, $color-dark-gray);
+    margin-bottom: 15px;
+  }
+
+  &__head,
+  &__period {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-stroke-gray;
+    margin-bottom: 20px;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .inputs-row {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__prices {
+    .input-box {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+
+      h4 {
+        white-space: nowrap; /* Запрещает перенос текста на новую строку */
+        overflow: hidden; /* Обрезает текст, который не помещается */
+        text-overflow: ellipsis; /* Добавляет троеточие в конце обрезанного текста */
+        width: 100%;
+      }
+
+      &.full-width {
+        width: 100%;
+      }
+    }
+  }
+}

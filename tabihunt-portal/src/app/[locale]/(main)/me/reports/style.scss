@@ -1,0 +1,23 @@
+@import "@/assets/scss/base.scss";
+
+.me-reports-page {
+  width: 1000px;
+  min-height: calc(100vh - 382px);
+  padding: 0;
+  margin: 20px 40px 20px 160px;
+
+  h2 {
+    @include Typography(24px, 600, $color-gray-dark);
+    margin-bottom: 20px;
+  }
+
+  @include Mobile {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+
+    .me-report-card__wrapper {
+      padding: 15px;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@import "vars";
+
+/* Font */
+
+@mixin Typography($size: null, $weight: null, $color: null) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+
+  white-space: pre-line;
+  word-break: normal;
+
+  @include Mobile() {
+    white-space: normal;
+  }
+}
+
+/* Adaptive */
+
+@mixin Mobile {
+  @media screen and (max-width: #{$width-mobile}) {
+    @content;
+  }
+}
+
+@mixin Tablet {
+  @media screen and (max-width: #{$width-desktop}) {
+    @content;
+  }
+}
+
+@mixin Desktop {
+  @media screen and (max-width: #{$width-desktop}) {
+    @content;
+  }
+}
+
+@mixin DesktopLarge {
+  @media screen and (min-width: calc(#{$width-desktop} + 1px)) {
+    @content;
+  }
+}
+
+/* Button */
+
+@mixin Button {
+  background: linear-gradient(0deg, #c3b091, #c3b091);
+  border-radius: $border-radius;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  height: 40px;
+  padding: 0 15px;
+
+  @include Typography($font-size-3, 500, $color-white);
+  line-height: $font-size-3;
+
+  &:hover {
+    background: #d8c3a1;
+  }
+
+  &:disabled {
+    background: $color-main-light;
+    cursor: not-allowed;
+    color: $color-main;
+  }
+}
+
+/* Frame */
+
+@mixin Frame {
+  border: 1px solid $color-stroke-gray;
+  border-radius: $border-radius;
+  padding: 20px;
+}

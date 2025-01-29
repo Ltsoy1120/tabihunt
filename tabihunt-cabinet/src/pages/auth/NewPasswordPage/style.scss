@@ -1,0 +1,48 @@
+@import "../../../assets/scss/bundle.scss";
+
+.new-password {
+  width: 360px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 80px;
+
+  img {
+    width: 140px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__info {
+    width: 100%;
+    border-radius: $border-radius;
+    border: 1px solid $color-stroke-gray;
+    padding: 10px 15px;
+
+    @include Typography($font-size-4, 400, $color-medium-gray);
+  }
+
+  &__error {
+    @include Typography($font-size-4, 400, $color-red);
+  }
+
+  button {
+    height: 56px;
+    width: 100%;
+  }
+}

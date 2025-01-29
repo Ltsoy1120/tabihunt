@@ -1,0 +1,60 @@
+@import "@/assets/scss/base.scss";
+
+.report-table {
+  padding-top: 20px;
+  border-top: 1px solid $color-gray-stroke;
+  margin-top: 20px;
+
+  table {
+    width: 100%;
+    border-spacing: 0;
+  }
+
+  th {
+    border: 1px solid $color-gray-stroke;
+    border-bottom: none;
+    border-left: none;
+    padding: 10px;
+    @include Typography($font-size-4, 600, $color-gray-medium);
+  }
+
+  td {
+    border: 1px solid $color-gray-stroke;
+    border-bottom: none;
+    border-left: none;
+    padding: 10px;
+    text-align: center;
+  }
+
+  th:first-child {
+    border-left: 1px solid $color-gray-stroke;
+    border-top-left-radius: 10px;
+  }
+
+  th:last-child {
+    border-top-right-radius: 10px;
+  }
+
+  td:first-child {
+    border-left: 1px solid $color-gray-stroke;
+  }
+
+  tr:last-child {
+    td {
+      border-bottom: 1px solid $color-gray-stroke;
+    }
+
+    td:first-child {
+      border-bottom-left-radius: 10px;
+    }
+
+    td:last-child {
+      border-bottom-right-radius: 10px;
+    }
+  }
+
+  @include Mobile {
+    width: 100%;
+    overflow-x: auto;
+  }
+}

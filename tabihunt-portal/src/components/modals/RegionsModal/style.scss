@@ -1,0 +1,43 @@
+@import "@/assets/scss/bundle.scss";
+
+.regions-modal {
+  width: 100%;
+
+  &__title {
+    text-align-last: left;
+    @include Typography(20px, 600, $color-gray-dark);
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 400px;
+    padding-right: 10px;
+    overflow-y: scroll;
+  }
+}
+/* Стилизация скроллбара для WebKit-браузеров (Chrome, Safari, новые версии Opera) */
+.regions-modal__list::-webkit-scrollbar {
+  width: 5px; /* ширина скроллбара */
+}
+
+.regions-modal__list::-webkit-scrollbar-track {
+  background: $color-gray-bg; /* цвет дорожки скроллбара */
+}
+
+.regions-modal__list::-webkit-scrollbar-thumb {
+  background: $color-gray-light; /* цвет самого скроллбара */
+}
+
+.regions-modal__list::-webkit-scrollbar-thumb:hover {
+  background: #555; /* цвет скроллбара при наведении */
+}
+
+/* Стилизация скроллбара для Firefox 64+ */
+.regions-modal__list {
+  scrollbar-width: thin; /* "auto" или "thin" */
+  scrollbar-color: $color-gray-light $color-gray-bg; /* цвет скроллбара и дорожки */
+}

@@ -1,0 +1,139 @@
+@import "@/assets/scss/bundle.scss";
+
+.voucher-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  h2 {
+    margin-bottom: 20px;
+    @include Mobile {
+      @include Typography($font-size-1, 600, $color-gray-dark);
+    }
+  }
+
+  .voucher__info {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+
+    &-img {
+      width: 310px;
+      border-radius: $border-radius;
+      overflow: hidden;
+      flex-grow: 0;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    &-description {
+      flex-grow: 1;
+      @include Frame;
+      border-radius: 20px;
+
+      h2 {
+        @include Typography($font-size-1, 600, $color-gray-dark);
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .description-block {
+        @include Frame;
+        padding: 10px 20px;
+
+        &__item {
+          display: flex;
+          justify-content: space-between;
+          padding: 15px 0;
+          border-bottom: 1px solid $color-gray-stroke;
+
+          span {
+            font-size: $font-size-3;
+            width: 50%;
+            border-right: 1px solid $color-gray-stroke;
+          }
+
+          p {
+            @include Typography($font-size-3, 600, $color-gray-dark);
+          }
+        }
+
+        &__item:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+
+    @include Mobile {
+      flex-direction: column;
+
+      &-img {
+        width: 100%;
+      }
+
+      &-description {
+        padding: 15px;
+        .description-block {
+          padding: 10px;
+        }
+        .description-block__item p {
+          width: 50%;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+
+  .voucher__prices {
+    &-list {
+      @include Frame;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      &-item {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        border-right: 1px solid $color-gray-stroke;
+
+        &:last-child {
+          border-right: none;
+        }
+
+        p {
+          @include Typography(32px, 500, $color-main);
+        }
+      }
+    }
+    @include Mobile {
+      &-list {
+        padding: 0;
+        &-item {
+          padding: 10px;
+          span {
+            text-align: center;
+          }
+          p {
+            font-size: 21px;
+          }
+        }
+      }
+    }
+  }
+
+  .purchase-btn {
+    width: 360px;
+    height: 56px;
+    margin-left: auto;
+    @include Mobile {
+      width: 100%;
+    }
+  }
+}

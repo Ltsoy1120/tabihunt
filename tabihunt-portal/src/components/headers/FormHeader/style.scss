@@ -1,0 +1,146 @@
+@import "@/assets/scss/bundle.scss";
+
+.form-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 10px 20px;
+  border-bottom: 1px solid $color-gray-stroke;
+
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  h1 {
+    @include Typography(20px, 600, $color-gray-dark);
+  }
+
+  .title-page-mobile {
+    display: none;
+  }
+
+  .stages {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      &-text {
+        @include Typography($font-size-2, 500, $color-gray-light);
+
+        &:hover {
+          color: $color-gray-dark;
+        }
+
+        &.active {
+          color: $color-gray-dark;
+        }
+      }
+
+      &-dot {
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: $color-gray-light;
+      }
+
+      &:last-child {
+        .steps__item-dot {
+          display: none;
+        }
+      }
+    }
+
+    &__item:last-child {
+      .stages__item-dot {
+        display: none;
+      }
+    }
+  }
+
+  .button {
+    width: 120px;
+    height: 40px;
+  }
+
+  .link-button {
+    color: $color-gray-medium;
+    background: $color-gray-bg;
+    padding: 10px 15px;
+    border-radius: $border-radius;
+  }
+
+  .text-button {
+    @include Typography($font-size-2, 500, $color-gray-light);
+  }
+
+  .basket-icon {
+    width: 48px;
+    span {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      width: 15px;
+      height: 15px;
+      background: $color-main;
+      border-radius: 50%;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: 600;
+    }
+  }
+
+  .form-btn {
+    width: 130px;
+  }
+
+  @include Mobile {
+    padding: 10px 15px;
+    .back {
+      span {
+        display: none;
+      }
+    }
+    .stages {
+      gap: 15px;
+      padding: 0;
+      padding-left: 20px;
+
+      &__item-text {
+        display: none;
+        &.active {
+          display: block;
+        }
+      }
+    }
+
+    .title-page {
+      display: none;
+    }
+
+    .title-page-mobile {
+      display: block;
+    }
+
+    a {
+      display: none;
+    }
+
+    .button {
+      display: none;
+    }
+    .form-btn {
+      width: 40px;
+    }
+  }
+}

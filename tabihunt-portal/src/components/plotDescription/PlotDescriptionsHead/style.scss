@@ -1,0 +1,57 @@
+@import "@/assets/scss/base.scss";
+
+.plotDescriptions-head {
+  padding: 20px 40px;
+  border-bottom: 1px solid $color-gray-stroke;
+
+  h2 {
+    @include Typography(21px, 600, $color-gray-dark);
+  }
+
+  &__actions {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-gray-stroke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .group-btns {
+      display: flex;
+      gap: 10px;
+    }
+
+    .mobile-filter-btn {
+      display: none;
+    }
+  }
+
+  &__search {
+    margin-top: 20px;
+  }
+
+  @include Mobile {
+    padding: 20px 10px;
+
+    h2 {
+      @include Typography($font-size-2, 600, $color-gray-dark);
+    }
+
+    .button {
+      width: 135px;
+      background: $color-gray-bg;
+      color: $color-gray-medium;
+    }
+
+    .button.active {
+      color: $color-main;
+      border: 1px solid $color-main;
+    }
+    .group-btns {
+      display: none;
+    }
+
+    .mobile-filter-btn {
+      display: block;
+    }
+  }
+}

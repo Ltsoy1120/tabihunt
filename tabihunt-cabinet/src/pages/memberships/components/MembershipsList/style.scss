@@ -1,0 +1,32 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.memberships-list {
+  max-height: calc(100svh - 330px);
+  overflow-y: auto;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    padding-right: 10px;
+    border-top: 1px solid $color-stroke-gray;
+    cursor: pointer;
+
+    &-info {
+      p {
+        @include Typography($font-size-4, 600, $color-dark-gray);
+        margin-bottom: 10px;
+      }
+
+      .active {
+        color: $color-main;
+      }
+
+      .row {
+        display: flex;
+        gap: 20px;
+      }
+    }
+  }
+}

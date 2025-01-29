@@ -1,0 +1,17 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.delete-button {
+  @include Button;
+  color: $color-red;
+  background: $color-light-red;
+  width: 120px;
+  box-sizing: border-box;
+
+  .icon {
+    margin-left: 10px;
+  }
+
+  &:hover {
+    background: #f0dadc;
+  }
+}

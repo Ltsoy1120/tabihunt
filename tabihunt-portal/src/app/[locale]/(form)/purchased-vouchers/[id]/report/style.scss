@@ -1,0 +1,79 @@
+@import "@/assets/scss/bundle.scss";
+
+.purchased-voucher-report {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+
+  .form {
+    width: 400px;
+    @include Frame;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h3 {
+      @include Typography($font-size-2, 600, $color-gray-dark);
+    }
+
+    .purchased-voucher__data {
+      width: 100%;
+      @include Frame;
+      padding: 15px;
+    }
+
+    .purchased-voucher__limits {
+      &-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 20px;
+
+        h3:first-child {
+          width: 60%;
+        }
+        h3:last-child {
+          width: 40%;
+        }
+      }
+
+      &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      &-item {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        .purchased-voucher__data {
+          width: 60%;
+        }
+
+        .input-wrapper {
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  @include Mobile {
+    padding: 80px 15px;
+    flex-direction: column;
+    gap: 15px;
+
+    .form {
+      width: 100%;
+      padding: 15px;
+    }
+
+    .button {
+      width: calc(100% - 30px);
+      height: 50px;
+      position: fixed;
+      bottom: 20px;
+    }
+  }
+}

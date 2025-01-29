@@ -1,0 +1,95 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.HuntingSociety {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  
+  @include Frame;
+  flex-direction: column;
+  gap: 30px;
+
+  img {
+    @include Frame;
+    width: 322px;
+    height: 322px;
+    padding: 0;
+    object-fit: cover
+  }
+  h2 {
+    @include Typography(21px, 600, $color-dark-gray);
+    margin-bottom: 20px;
+}
+  p {
+    line-height: 24px;
+  }
+
+  .infocard {
+    display: flex;
+  }
+  .mainInfoHuntingSociety {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .aboutInfo {
+        width: 600px;
+        height: 310px;
+        margin: 20px;
+        .aboutTextInfo {
+            height: 273px;
+           &-card {
+            @include Frame;
+            padding: 10px 30px;
+            height: 130px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+          } 
+        }
+    }
+  }
+
+.instructionsHuntingSociety {
+  &-card {
+    @include Frame;
+    padding: 10px 30px;
+    height: 130px;
+    margin-top: 20px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+  }
+}
+
+  .contactCardHuntingSociety {
+    display: flex;
+    margin: 50px 0;
+    width: 500px;
+    flex-wrap: wrap;
+    &-item {
+        margin-left: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      img {
+        border: none;
+        border-radius: 0;
+        width: 20px;
+        height: auto;
+      }
+    }
+  }
+  .location {
+    img {
+        width: 25px;
+        height: auto; 
+    }
+    &-clock{
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+}
+}

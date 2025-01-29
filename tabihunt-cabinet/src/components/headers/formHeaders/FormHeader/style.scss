@@ -1,0 +1,67 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.form-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 10px 20px;
+  border-bottom: 1px solid $color-stroke-gray;
+
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  .steps {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      &-text {
+        @include Typography($font-size-2, 500, $color-light-gray);
+
+        &:hover {
+          color: $color-dark-gray;
+        }
+
+        &.active {
+          color: $color-dark-gray;
+        }
+      }
+
+      &-dot {
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: $color-light-gray;
+      }
+
+      &:last-child {
+        .steps__item-dot {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .button {
+    width: 120px;
+    height: 40px;
+  }
+
+  .link-button {
+    color: $color-medium-gray;
+    background: $color-bg-gray;
+  }
+
+  .text-button {
+    @include Typography($font-size-2, 500, $color-light-gray);
+  }
+}

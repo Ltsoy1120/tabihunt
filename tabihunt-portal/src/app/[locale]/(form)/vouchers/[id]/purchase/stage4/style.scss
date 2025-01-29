@@ -1,0 +1,74 @@
+@import "@/assets/scss/bundle.scss";
+
+.purchase-voucher-stape4 {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  h2 {
+    @include Typography(21px, 500, $color-gray-dark);
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+  }
+
+  .form-block {
+    @include Frame;
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h2 {
+      @include Typography(20px, 500, $color-gray-dark);
+      padding-bottom: 25px;
+      text-align: center;
+      border-bottom: 1px solid $color-gray-stroke;
+    }
+
+    h3 {
+      @include Typography($font-size-2, 500, $color-gray-dark);
+    }
+  }
+
+  @include Mobile {
+    padding: 80px 15px 90px;
+    gap: 15px;
+
+    .container {
+      flex-direction: column;
+
+      .form-block {
+        width: 100%;
+        padding: 15px;
+        gap: 15px;
+
+        h2 {
+          padding-bottom: 15px;
+        }
+
+        .date-selector {
+          gap: 10px;
+          .select {
+            padding: 10px;
+          }
+        }
+      }
+
+      .button {
+        width: calc(100% - 30px);
+        height: 50px;
+        position: fixed;
+        bottom: 20px;
+      }
+    }
+  }
+}

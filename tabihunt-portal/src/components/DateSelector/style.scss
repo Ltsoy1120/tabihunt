@@ -1,0 +1,39 @@
+@import "@/assets/scss/bundle.scss";
+
+.date-selector {
+  display: flex;
+  gap: 20px;
+
+  .dropdown__list {
+    height: 150px;
+    overflow-y: scroll;
+
+    &-item {
+      border-bottom: 1px solid $color-gray-stroke;
+    }
+
+    &-item:last-child {
+      border-bottom: none;
+    }
+
+    &-item:hover {
+      cursor: pointer;
+      @include Typography($font-size-3, 600, $color-gray-dark);
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: $color-gray-light;
+    }
+
+    &::-webkit-scrollbar-track {
+      width: 5px;
+      background-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../../assets/scss/bundle.scss";
+
+.huntsmen {
+  display: flex;
+  gap: 20px;
+
+  &-info,
+  .huntsman-card {
+    width: 50%;
+    height: 100%;
+    @include Frame;
+
+    padding: 15px;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    &__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .button {
+        width: 125px;
+        height: 40px;
+      }
+
+      .text-button {
+        @include Typography($font-size-1, 500, $color-dark-gray);
+
+        svg {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

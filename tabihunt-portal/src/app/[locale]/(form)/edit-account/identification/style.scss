@@ -1,0 +1,44 @@
+@import "@/assets/scss/bundle.scss";
+
+.edit-identification-form {
+  padding: 80px 60px 50px;
+
+  &__col {
+    @include Frame;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+
+    h3 {
+      @include Typography($font-size-2, 500, $color-gray-dark);
+      margin-bottom: -10px;
+    }
+  }
+
+  @include Mobile {
+    padding: 80px 15px 80px;
+    &__col {
+      width: 100%;
+      padding: 15px;
+
+      .date-selector {
+        gap: 10px;
+      }
+    }
+    .button {
+      width: calc(100% - 30px);
+      position: fixed;
+      bottom: 20px;
+      height: 50px;
+      padding: 0;
+
+      &:disabled {
+        width: calc(100% - 30px);
+        border: 1px solid $color-gray-stroke;
+        background: white;
+      }
+    }
+  }
+}

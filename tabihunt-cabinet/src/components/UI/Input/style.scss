@@ -1,0 +1,53 @@
+@import "../../../assets/scss/bundle.scss";
+
+.input-wrapper {
+  width: 100%;
+  height: 56px;
+  padding: 16px 18px;
+  background: $color-bg-gray;
+  border-radius: $border-radius;
+  display: flex;
+  align-items: center;
+
+  input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+
+    @include Typography($font-size-3, 400, $color-dark-gray);
+  }
+
+  &-error {
+    width: 100%;
+    height: 56px;
+    padding: 16px 18px;
+    background: $color-bg-gray;
+    border-radius: $border-radius;
+    display: flex;
+    align-items: center;
+
+    input {
+      width: 100%;
+      height: 100%;
+      outline: none;
+      @include Typography($font-size-3, 400, $color-red);
+
+    }
+  }
+
+
+}
+
+.input-error__wrapper {
+  position: relative;
+  top: 0;
+  right: 0;
+
+  &-text {
+    display: block;
+    width: 60px;
+    margin-left: $margin-1;
+    @include Typography($font-size-3, 400, $color-red);
+
+  }
+}

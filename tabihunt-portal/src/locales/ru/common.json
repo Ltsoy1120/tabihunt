@@ -1,0 +1,103 @@
+{
+  "header": {
+    "login-btn": "Войти"
+  },
+  "page-header": {
+    "voucher": "Путевка",
+    "hunting-society": "Охотничье общество",
+    "plot-description": "Охотничье угодье"
+  },
+  "form-header": {
+    "purchased-voucher": {
+      "report": "Отчет по фактическому изъятию природных ресурсов",
+      "report-mobile": "Отчет",
+      "send-btn": "Отправить"
+    },
+    "account": {
+      "personal-data": "Личная информация",
+      "hunting-license": "Удостоверение охотника",
+      "identification": "Удостоверение личности",
+      "address": "Адрес",
+      "save-btn": "Сохранить",
+      "empty-data-btn": "Заполните данные"
+    },
+    "voucher": {
+      "stage1": "ЭТАП 1",
+      "stage2": "ЭТАП 2",
+      "stage3": "ЭТАП 3",
+      "stage4": "ЭТАП 4",
+      "stage5": "ЭТАП 5",
+      "payment": "Оплата",
+      "continue-btn": "Далее",
+      "payment-btn": "Оплатить"
+    },
+    "membership-renew": {
+      "stage1": "ЭТАП 1",
+      "stage2": "ЭТАП 2",
+      "stage3": "ЭТАП 3",
+      "payment": "Оплата",
+      "continue-btn": "Далее",
+      "renew-btn": "Продлить"
+    }
+  },
+  "sidebar": {
+    "main": "Главная",
+    "vouchers": "Путевки",
+    "hunting-societies": "Сообщества",
+    "plot-descriptions": "Охотугодья",
+    "map": "Карта",
+    "partners": "Партнерам",
+    "me-account": "Мой аккаунт",
+    "me-reports": "Мои отчеты",
+    "me-vouchers": "Мои путевки",
+    "login-btn": "Войти",
+    "logout-btn": "Выйти"
+  },
+  "mobile-panel": {
+    "main": "Главная",
+    "vouchers": "Путевки",
+    "me-account": "Мой аккаунт",
+    "notifications": "Уведомления",
+    "login-btn": "Войти",
+    "logout-btn": "Выйти"
+  },
+  "footer": {
+    "text": "Присоединяйтесь к Tabihunt.kz и откройте для себя новые возможности в охотничьем бизнесе!",
+    "documents": {
+      "title": "Документы",
+      "offer-agreement": "Договор оферты",
+      "privacy-policy": "Политика конфиденциальности",
+      "online-payments": "Онлайн-платежи"
+    },
+    "regulatory-framework": {
+      "title": "Нормативно-правовая база",
+      "animal-protection": "Охрана и защита животных",
+      "hunting-rules": "Правила охоты",
+      "rules-for-vouchers": "Правила выдачи путевок",
+      "rules-for-weapons": "Правила оборота оружия"
+    },
+    "contacts": { "title": "Контакты" },
+    "pages": {
+      "title": "Страницы",
+      "main": "Главная",
+      "vouchers": "Путевки",
+      "hunting-societies": "Сообщества",
+      "plot-descriptions": "Охотугодья",
+      "map": "Карта",
+      "partners": "Партнерам"
+    },
+    "copyrighter": "Все права защищены ТОО \"Tabihunt\" версия"
+  },
+  "data-selector": {
+    "day": "День",
+    "month": "Месяц",
+    "year": "Год"
+  },
+  "file-input": {
+    "upload-file": "Загрузите файл",
+    "upload-drag-file": "Загрузите файл или перетащите его сюда файл",
+    "choose-file": "Выбрать файл"
+  },
+  "back": "Вернуться",
+  "loader": "Подождите, идет загрузка данных"
+}

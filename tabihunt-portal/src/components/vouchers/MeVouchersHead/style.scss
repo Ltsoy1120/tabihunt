@@ -1,0 +1,30 @@
+@import "@/assets/scss/base.scss";
+
+.me-vouchers-head {
+  padding: 20px 40px;
+  border-bottom: 1px solid $color-gray-stroke;
+
+  &__actions {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-gray-stroke;
+
+    .text-button {
+      @include Typography(21px, 600, $color-gray-dark);
+      display: flex;
+      align-items: center;
+
+      .icon {
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &__search {
+    margin-top: 20px;
+  }
+
+  @include Mobile {
+    padding: 15px;
+  }
+}

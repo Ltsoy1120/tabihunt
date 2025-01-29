@@ -1,0 +1,14 @@
+@import "@/assets/scss/base.scss";
+
+.voucher__animals {
+  &-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+
+    @include Mobile {
+      flex-wrap: wrap;
+    }
+  }
+}

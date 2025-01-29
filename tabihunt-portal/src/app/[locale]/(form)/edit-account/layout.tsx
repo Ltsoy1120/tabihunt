@@ -1,0 +1,24 @@
+import initTranslations from "@/app/i18n"
+import TranslationsProvider from "@/components/TranslationsProvider"
+
+export default async function EditAccountLayout({
+  children,
+  params: { locale }
+}: {
+  children: React.ReactNode
+  params: { locale: string }
+}) {
+  const { resources } = await initTranslations({
+    locale,
+    namespaces: ["account", "common"]
+  })
+  return (
+    <TranslationsProvider
+      resources={resources}
+      locale={locale}
+      namespaces={["account", "common"]}
+    >
+      {children}
+    </TranslationsProvider>
+  )
+}

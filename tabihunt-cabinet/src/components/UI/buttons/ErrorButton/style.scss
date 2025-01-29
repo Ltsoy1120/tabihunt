@@ -1,0 +1,13 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.error-button {
+  @include Button;
+  width: 100%;
+  height: 56px;
+  box-sizing: border-box;
+
+  &:disabled {
+    background: $color-light-red;
+    color: $color-red;
+  }
+}

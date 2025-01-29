@@ -1,0 +1,45 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.new-limit-step2 {
+  width: 560px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 auto;
+  @include Frame;
+
+  h2 {
+    @include Typography(21px, 500, $color-dark-gray);
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-stroke-gray;
+  }
+
+  h3 {
+    @include Typography($font-size-2, 500, $color-dark-gray);
+  }
+
+  .inputs-row {
+    display: flex;
+    gap: 10px;
+    h3 {
+      margin-bottom: 15px;
+    }
+  }
+
+  .select {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+
+    .dropdown__list {
+      width: 100%;
+      top: 56px;
+
+      &-item {
+        padding: 12px;
+      }
+    }
+  }
+}

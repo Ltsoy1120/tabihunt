@@ -1,0 +1,66 @@
+@import "@/assets/scss/bundle.scss";
+
+.edit-personal-data-form {
+  width: 100%;
+  padding: 80px 60px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  h2 {
+    @include Typography($font-size-2, 500, $color-gray-dark);
+  }
+
+  &__block {
+    @include Frame;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  h3 {
+    @include Typography($font-size-3, 500, $color-gray-dark);
+    margin-bottom: -10px;
+  }
+
+  &__col {
+    width: calc(50% - 20px);
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  @include Mobile {
+    padding: 80px 15px 80px;
+    &__block {
+      width: 100%;
+      flex-direction: column;
+      padding: 15px;
+    }
+    &__col {
+      width: 100%;
+      min-width: 100%;
+    }
+
+    .date-selector {
+      gap: 10px;
+    }
+
+    .button {
+      width: calc(100% - 30px);
+      position: fixed;
+      bottom: 20px;
+      height: 50px;
+      padding: 0;
+
+      &:disabled {
+        width: calc(100% - 30px);
+        border: 1px solid $color-gray-stroke;
+        background: white;
+      }
+    }
+  }
+}

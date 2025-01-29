@@ -1,0 +1,45 @@
+@import "../../../assets/scss/bundle.scss";
+
+.new-voucher-step5 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 auto;
+
+  h2 {
+    @include Typography(21px, 600, $color-dark-gray);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .block-wrapper {
+    @include Frame;
+  }
+  .block {
+    @include Frame;
+    padding: 0 20px;
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0;
+      border-bottom: 1px solid $color-stroke-gray;
+
+      span {
+        font-size: $font-size-3;
+        width: 50%;
+        border-right: 1px solid $color-stroke-gray;
+      }
+
+      p {
+        @include Typography($font-size-3, 600, $color-dark-gray);
+      }
+    }
+
+    &__item:last-child {
+      border-bottom: none;
+    }
+  }
+}

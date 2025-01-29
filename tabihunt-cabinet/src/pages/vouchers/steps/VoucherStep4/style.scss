@@ -1,0 +1,54 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.new-voucher-step4 {
+  display: flex;
+  gap: 20px;
+
+  .add-limit-block,
+  .selected-limits-block {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    @include Frame;
+  }
+
+  h2 {
+    @include Typography(21px, 500, $color-dark-gray);
+  }
+
+  .limits-list {
+    max-height: calc(100svh - 330px);
+    overflow-y: auto;
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+      padding-right: 10px;
+      @include Typography($font-size-3, 500, $color-dark-gray);
+      border-top: 1px solid $color-stroke-gray;
+
+      p {
+        @include Typography($font-size-3, 600, $color-dark-gray);
+      }
+
+      .chosen {
+        color: $color-light-gray;
+      }
+
+      .button {
+        width: 120px;
+        height: 40px;
+        color: $color-main;
+        background: $color-main-light;
+      }
+    }
+
+    p {
+      @include Typography($font-size-3, 200, $color-dark-gray);
+    }
+  }
+}

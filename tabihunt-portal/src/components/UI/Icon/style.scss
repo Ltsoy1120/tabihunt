@@ -1,0 +1,16 @@
+.icon {
+  display: inline;
+  vertical-align: middle;
+
+  use {
+    pointer-events: none;
+  }
+}
+
+.start-icon {
+  margin-right: 10px;
+}
+
+.end-icon {
+  margin-left: 10px;
+}

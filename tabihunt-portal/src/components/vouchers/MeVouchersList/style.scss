@@ -1,0 +1,12 @@
+@import "@/assets/scss/base.scss";
+
+.me-vouchers-list {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include Mobile {
+    padding: 15px;
+  }
+}

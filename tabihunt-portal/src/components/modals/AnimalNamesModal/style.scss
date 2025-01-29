@@ -1,0 +1,56 @@
+@import "@/assets/scss/bundle.scss";
+
+.animalNames-modal {
+  width: 100%;
+
+  &__title {
+    text-align-last: left;
+    @include Typography(20px, 600, $color-gray-dark);
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .input-wrapper {
+    margin-bottom: 20px;
+    margin-right: 15px;
+    width: auto;
+
+    input {
+      text-align: left;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 240px;
+    padding-right: 10px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: $color-gray-light;
+    }
+
+    &::-webkit-scrollbar-track {
+      width: 5px;
+      background-color: transparent;
+    }
+
+    p {
+      margin-top: 20px;
+    }
+  }
+
+  .button {
+    width: 100%;
+    height: 50px;
+  }
+}

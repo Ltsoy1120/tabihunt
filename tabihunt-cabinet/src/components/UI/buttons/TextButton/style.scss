@@ -1,0 +1,17 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.text-button {
+  border: none;
+  text-align: center;
+  cursor: pointer;
+
+  @include Typography($font-size-3, 500, $color-main);
+
+  &:hover {
+    color: $color-main-dark;
+  }
+  &:disabled {
+    cursor: default;
+    color: $color-medium-gray;
+  }
+}

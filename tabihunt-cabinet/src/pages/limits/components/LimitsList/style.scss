@@ -1,0 +1,34 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.limits-list {
+  max-height: calc(100svh - 330px);
+  // overflow-y: auto;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    padding-right: 10px;
+    border-top: 1px solid $color-stroke-gray;
+    cursor: pointer;
+
+    &-info {
+      p {
+        @include Typography($font-size-3, 600, $color-dark-gray);
+      }
+
+      .row {
+        margin-top: 15px;
+        display: flex;
+        gap: 20px;
+      }
+    }
+
+    .active {
+      p {
+        color: $color-main-dark;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import "@/assets/scss/bundle.scss";
+
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 10px 20px;
+  border-bottom: 1px solid $color-gray-stroke;
+
+  position: fixed;
+  top: 0;
+  z-index: 2;
+
+  &__logo {
+    margin-right: 20px;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 20px;
+
+    .button {
+      height: 40px;
+      color: $color-white;
+      svg {
+        height: 20px;
+      }
+    }
+
+    .account-btn {
+      @include Typography($font-size-3, 500, $color-gray-medium);
+      border: 1px solid $color-gray-stroke;
+      color: $color-gray-medium;
+    }
+  }
+
+  .outline-button {
+    .end-icon {
+      color: $color-gray-medium;
+      margin-left: 0;
+    }
+  }
+
+  @include Mobile() {
+    padding: 10px 15px;
+    &__actions {
+      gap: 10px;
+    }
+  }
+}

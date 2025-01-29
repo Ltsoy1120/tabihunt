@@ -1,0 +1,34 @@
+@import "../../../assets/scss/bundle.scss";
+
+.file-input {
+  width: 100%;
+  @include Frame;
+  padding: 30px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+  }
+
+  .button {
+    background: $color-bg-gray;
+    color: $color-medium-gray;
+  }
+}
+
+.drag {
+  background: $color-main-light;
+}
+
+.doc-file-input {
+  .button {
+    width: 100%;
+    height: 56px;
+    box-sizing: border-box;
+    background: $color-bg-gray;
+    color: $color-medium-gray;
+  }
+}

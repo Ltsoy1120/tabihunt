@@ -1,0 +1,13 @@
+@import "@/assets/scss/base.scss";
+
+.me-reports-head {
+  @include Frame;
+  margin-bottom: 20px;
+
+  h3 {
+    @include Typography($font-size-3, 600, $color-gray-dark);
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-gray-stroke;
+    margin-bottom: 20px;
+  }
+}

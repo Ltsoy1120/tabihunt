@@ -1,0 +1,46 @@
+@import "@/assets/scss/bundle.scss";
+
+.checkbox {
+  display: flex;
+  align-items: center;
+
+  .real-checkbox {
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+  }
+
+  .custom-checkbox {
+    position: absolute;
+    left: 0;
+    height: 32px;
+    width: 32px;
+    background-color: $color-white;
+    border-radius: 50%;
+    border: 1px solid $color-gray-medium;
+  }
+
+  /* галочка внутри checkbox */
+  .real-checkbox:checked + .custom-checkbox:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url("../../../../public/static/images/icons/checkbox.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &-label {
+    @include Typography($font-size-3, 500, $color-gray-dark);
+
+    a {
+      @include Typography($font-size-3, 600, $color-main);
+      text-decoration: underline;
+    }
+    margin-left: 40px;
+  }
+}

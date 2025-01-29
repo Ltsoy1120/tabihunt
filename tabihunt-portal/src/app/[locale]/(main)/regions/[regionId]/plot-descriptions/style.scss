@@ -1,0 +1,12 @@
+@import "@/assets/scss/base.scss";
+
+.plot-descriptions-page {
+  min-height: calc(100vh - 382px);
+  @include Frame;
+  padding: 0;
+  margin: 20px 40px 20px 160px;
+
+  @include Mobile {
+    margin: 20px 15px;
+  }
+}

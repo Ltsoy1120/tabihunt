@@ -1,0 +1,44 @@
+@import "../../../assets/scss/bundle.scss";
+
+.tabs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .tabs__btns {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    border-radius: $border-radius;
+    border: 1px solid $color-stroke-gray;
+    padding: 4px 8px;
+
+    button {
+      width: 50%;
+      height: 40px;
+    }
+
+    .button {
+      background: none;
+      @include Typography($font-size-3, 500, $color-medium-gray);
+
+      &:hover {
+        box-shadow: none;
+        @include Typography($font-size-3, 500, $color-dark-gray);
+      }
+
+      &:disabled {
+        @include Typography($font-size-3, 500, $color-main);
+        cursor: default;
+      }
+    }
+
+    .active {
+      background: $color-main-light;
+      border-radius: 12px;
+      @include Typography($font-size-3, 500, $color-main);
+    }
+  }
+}

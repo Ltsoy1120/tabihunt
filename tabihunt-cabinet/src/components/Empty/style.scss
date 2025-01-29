@@ -1,0 +1,26 @@
+@import "../../assets/scss/bundle.scss";
+
+.empty {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    h2 {
+      @include Typography($font-size-3, 400, $color-dark-gray);
+    }
+  }
+
+  .help {
+    width: 64px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+}

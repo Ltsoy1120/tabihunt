@@ -1,0 +1,16 @@
+@import "@/assets/scss/base.scss";
+
+.vouchers-page {
+  width: fit-content;
+  min-width: 700px;
+  min-height: calc(100svh - 382px); // -(header+futter)
+  @include Frame;
+  padding: 0;
+  margin: 20px 40px 20px 160px;
+
+  @include Mobile {
+    margin: 15px;
+    width: calc(100vw - 30px);
+    min-width: calc(100vw - 30px);
+  }
+}

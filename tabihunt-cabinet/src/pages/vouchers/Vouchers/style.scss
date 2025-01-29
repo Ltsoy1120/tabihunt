@@ -1,0 +1,36 @@
+@import "../../../assets/scss/bundle.scss";
+
+.vouchers {
+  width: 660px;
+  @include Frame;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__head {
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-stroke-gray;
+
+    .text-button {
+      @include Typography($font-size-1, 500, $color-dark-gray);
+      margin-right: auto;
+
+      svg {
+        margin-left: 10px;
+      }
+    }
+
+    .button {
+      background: $color-bg-gray;
+      color: $color-dark-gray;
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@import "@/assets/scss/base.scss";
+
+.voucher-card {
+  @include Frame;
+  height: fit-content;
+  display: flex;
+  gap: 20px;
+
+  img {
+    width: 170px;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__data {
+    width: 100%;
+    height: 170px;
+    @include Frame;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+
+    &:first-child {
+      padding-bottom: 20px;
+      border-bottom: 1px solid $color-gray-stroke;
+    }
+
+    &:last-child {
+      padding-top: 20px;
+    }
+    .group-btns {
+      display: flex;
+      gap: 10px;
+    }
+    .main-light-btn {
+      background: $color-main-light;
+      color: $color-main;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  @include Mobile {
+    flex-direction: column;
+    border: none;
+    padding: 0;
+
+    &__img {
+      width: 100%;
+      height: 150px;
+      border-radius: $border-radius;
+      overflow: hidden;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+      .label {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1;
+      }
+    }
+
+    &__data {
+      height: fit-content;
+      padding: 15px 10px;
+    }
+
+    &__block {
+      gap: 20px;
+      .group-btns {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@import "@/assets/scss/base.scss";
+
+.vouchers-head {
+  padding: 20px 40px;
+  border-bottom: 1px solid $color-gray-stroke;
+
+  &__actions {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-gray-stroke;
+    display: flex;
+    justify-content: space-between;
+
+    .text-button {
+      @include Typography(21px, 600, $color-gray-dark);
+      display: flex;
+      align-items: center;
+
+      .icon {
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+    }
+
+    .group-btns {
+      display: flex;
+      gap: 10px;
+    }
+
+    .mobile-filter-btn {
+      display: none;
+    }
+  }
+
+  &__search {
+    margin-top: 20px;
+  }
+
+  @include Mobile {
+    padding: 20px 10px;
+
+    &__actions {
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .text-button {
+      width: 170px;
+      font-size: $font-size-2;
+
+      .icon {
+        width: 30px;
+      }
+    }
+
+    .group-btns {
+      display: none;
+    }
+
+    .mobile-filter-btn {
+      display: block;
+    }
+
+    .button {
+      width: 130px;
+      background: $color-gray-bg;
+      color: $color-gray-medium;
+    }
+
+    .button.active {
+      color: $color-main;
+      border: 1px solid $color-main;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.new-purchased-voucher-step4 {
+  width: 560px;
+  @include Frame;
+  margin: 0 auto 20px auto;
+  h2 {
+    @include Typography(21px, 600, $color-dark-gray);
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  h3 {
+    @include Typography($font-size-2, 500, $color-dark-gray);
+  }
+  h4 {
+    text-align: right;
+    width: 200px;
+    @include Typography($font-size-2, 400, $color-dark-gray);
+  }
+  span {
+    @include Typography(16px, 500, $color-dark-gray);
+  }
+}
+
+.select {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  .dropdown__list {
+    width: 100%;
+    top: 56px;
+
+    &-item {
+      padding: 12px;
+    }
+  }
+}
+.hunterInfoWrapper {
+  width: 100%;
+  @include Frame;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid $color-stroke-gray;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 220px;
+      height: 30px;
+      border-right: 1px solid $color-stroke-gray;
+    }
+  }
+}
+
+.hunterInfoWrapper > div:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.hunterInfoWrapper > div:last-child {
+  padding-bottom: 0;
+}
+
+.AcceptButtonPayment {
+  margin-top: 20px;
+  button {
+    width: 94%;
+  }
+}
+
+.new-purchased-voucher-step4:last-child {
+  margin-bottom: 130px;
+}

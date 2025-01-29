@@ -1,0 +1,236 @@
+{
+  "main": {
+    "plot-select": {
+      "title": "Барлық жерлер",
+      "modal": {
+        "title": "Жер",
+        "empty": "Облыс бойынша жер жоқ",
+        "button": "Қолдану"
+      }
+    },
+    "animal-type-select": {
+      "title": "Ойын түрі",
+      "feathered": "Қауырсынды және жүнді",
+      "ungulate": "Тұяқтылар",
+      "modal": {
+        "all": "Барлығы",
+        "button": "Қолдану"
+      }
+    },
+    "voucher-type-select": {
+      "title": "Жолдама түрі",
+      "seasonal": "Маусымдық",
+      "one-time": "Бір реттік",
+      "modal": {
+        "all": "Барлығы",
+        "button": "Қолдану"
+      }
+    },
+    "filters-btn": "Сүзгілер",
+    "filter-select-title": "Сүзгі",
+    "voucher-search": "Ойын атауы бойынша жолдаманы іздеу",
+    "card": {
+      "voucher-duration": "Күндер саны",
+      "voucher-type": {
+        "seasonal": "Маусымдық",
+        "one-time": "Бір реттік"
+      },
+      "voucher-prices": {
+        "standardPrice": "Стандартты",
+        "membershipPrice": "Аңшылық Мүшесі. Қоғамдар",
+        "preferentialPrice": "Жеңілдікті (Зейнеткер)",
+        "specialPrice": "Арнайы"
+      },
+      "voucher-animal": "Ойын",
+      "button": "Сатып алу"
+    }
+  },
+  "page": {
+    "title": "Жолдама",
+    "voucher-info": {
+      "title": "Сипаттамасы",
+      "voucherType": {
+        "title": "Жолдама түрі",
+        "seasonal": "Маусымдық",
+        "one-time": "Бір реттік"
+      },
+      "animalTypes": {
+        "title": "Ойын түрі",
+        "all": "Қауырсынды, жүнді / тұяқты",
+        "feathered": "Қауырсынды, жүнді",
+        "ungulate": "Тұяқтылар",
+        "empty": "Көрсетілмеген"
+      },
+      "plot": "Жер",
+      "duration": "Ұзақтығы",
+      "startDate": "Басталуы",
+      "endDate": "Соңы"
+    },
+    "voucher-animals": {
+      "title": "Сайттағы ойын",
+      "search": "Жануарды аты бойынша іздеу",
+      "empty": "Жануар табылған жоқ"
+    },
+    "voucher-prices": {
+      "title": "Ойынсыз баға",
+      "headPrice": "Бас бағасы",
+      "standardPrice": "Стандартты",
+      "membershipPrice": "Аңшылық Мүшесі. Қоғамдар",
+      "preferentialPrice": "Жеңілдікті (Зейнеткер)",
+      "specialPrice": "Арнайы"
+    },
+    "me-voucher-animals": {
+      "title": "Сатып алынған ойын",
+      "empty": "Жануар табылған жоқ"
+    },
+    "me-voucher-prices": {
+      "title": "Бағасы",
+      "voucher-price": "Ойынсыз баға",
+      "total-amount": "Жалпы сомасы"
+    },
+    "warning": {
+      "title": "Тіркелгі жасаңыз",
+      "text": "Жолдаманы сатып алу үшін порталда тіркелу қажет.",
+      "register-button": "Тіркелу",
+      "has-account": "Есептік жазба бар ма?",
+      "login-button": "Кіру"
+    },
+    "button": "Бағаны қалыптастыруға өтіңіз"
+  },
+  "form": {
+    "necessarily": "Міндетті",
+    "not-necessarily": "Міндетті емес",
+    "stage1": {
+      "title": "Күнді таңдаңыз",
+      "placeholder": "Күнді таңдаңыз",
+      "limit-info": "Жолдама лимиті таусылды",
+      "date-warning": {
+        "title": "Басқа күнді таңдаңыз",
+        "text": "Бұл күні сізде жолдама бар. Бір күнге бірнеше жолдаманы ресімдеуге жол берілмейді.",
+        "button": "Түсінікті"
+      },
+      "mobile-btn": "Келесі"
+    },
+    "stage2": {
+      "title": "Аң аулау үшін ойын түрлерін таңдаңыз",
+      "animalTypes": {
+        "feathered": "Қауырсынды және жүнді",
+        "ungulate": "Тұяқтылар"
+      },
+      "animal-search": "Жануарды аты бойынша іздеу",
+      "animal-limit-head": "Жолдама саны",
+      "add-button": "Қосу",
+      "add-animal-button": "Ойын қосыңыз",
+      "not-available": "Аң аулау мүмкін емес",
+      "basket": "Себет",
+      "continue-btn": "Келесі",
+      "hunting-date-warning": {
+        "title": "Жануар қол жетімді емес",
+        "text": "Сіз таңдаған аң аулау жануары уақытша қол жетімді емес. Бұл түрдің белгіленген аң аулау кезеңі бар, ол сіз таңдаған жолдама мерзіміне сәйкес келмейді.",
+        "button": "Түсінікті"
+      },
+      "voucher-limit-heads-warning": {
+        "title": "Сіз лимитке жеттіңіз",
+        "text": "Сіз жолдамаңыздағы ойын бастарының саны бойынша лимитке жеттіңіз. Белгіленген аң аулау ережелерін сақтаңыз және рұқсат етілген нормалардан аспаңыз.",
+        "button": "Түсінікті"
+      },
+      "animal-imit-heads-warning": {
+        "title": "Жануар қол жетімді емес",
+        "text": "Сіз таңдаған аң аулайтын жануарды уақытша сатып алуға болмайды. Өкінішке орай, осы түрдегі бастардың саны шектелген.",
+        "button": "Түсінікті"
+      },
+      "animal-available-heads-warning": {
+        "title": "Жануар қол жетімді емес",
+        "text": "Сіз лимитке жеттіңіз. Қол жетімді қалдық - ",
+        "pieces": "дана",
+        "button": "Түсінікті"
+      }
+      
+    },
+    "stage3": {
+      "title": "Деректерді тексеріңіз",
+      "personal-data": {
+        "title": "Жеке ақпарат",
+        "lastname": "Тегі",
+        "firstname": "Имя",
+        "patronymic": "Аты",
+        "dateOfBirth": "Туған күні",
+        "iin": "ЖСН"
+      },
+      "contacts-data": {
+        "title": "Байланыс ақпараты",
+        "phoneNumber": "Телефон нөмірі",
+        "email": "Пошта"
+      }
+    },
+    "stage4": {
+      "title": "Деректерді тексеріңіз",
+      "address": {
+        "title": "Мекен-жайы",
+        "region": "Облыс",
+        "city": "Қала",
+        "street": "Көше / Шағын Аудан",
+        "houseNumber": "Үй",
+        "flatNumber": "Пәтер"
+      },
+      "hunting-license": {
+        "title": "Аңшы куәлігі",
+        "huntingLicenseNumber": "Нөмірі",
+        "huntingLicenseIssued": "Берілген",
+        "huntingLicenseValid": "Дейін жарамды"
+      }
+    },
+    "stage5": {
+      "title": "Жолдама",
+      "voucher-info": {
+        "voucher": "Жолдама",
+        "plot": "",
+        "voucherType": ""
+      },
+      "voucher-type": {
+        "seasonal": "Сезонная",
+        "one-time": "Маусымдық"
+      },
+      "animals-info": {
+        "title": "Сатып алынған ойын"
+      },
+      "checkbox": "Мен келісемін",
+      "checkbox-link": "аңшылық шаруашылығы ережелерімен",
+      "total-amount": "Төлем сомасы",
+      "go-to-payment": "Төлемге өтіңіз"
+    },
+    "payment": {
+      "title": "Төлем әдісін таңдаңыз",
+      "card": "Карта",
+      "payment-success-modal": {
+        "title": "Төлем сәтті өтті!",
+        "text": "Біздің қызметті пайдаланғаныңыз үшін рахмет. Біз төлем туралы растауды және тапсырыс туралы ақпаратты электрондық пошта мекенжайыңызға жібердік",
+        "download": "Жолдаманы жүктеп алыңыз",
+        "redirect": "Жолдамаға өтіңіз"
+      }
+    }
+  },
+  "me-vouchers": {
+    "voucher-type-select": {
+      "title": "Барлық жолдамалар",
+      "actual": "Өзекті",
+      "archive": "Мұрағат"
+    },
+    "modal": {
+      "title": "Жолдама түрі",
+      "all": "Барлығы",
+      "actual": "Өзекті",
+      "archive": "Мұрағат",
+      "button": "Қолдану"
+    },
+    "card": {
+      "voucher-number": "Нөмірі",
+      "create-voucher-report-btn": "Жолдама туралы есеп жасаңыз",
+      "voucher-report-mobile-btn": "Есеп",
+      "voucher-download-btn": "Жолдаманы жүктеп алыңыз",
+      "button": "Толығырақ"
+    },
+    "search": "Аңшылық жерінің атауы бойынша жолдаманы іздеу"
+  },
+  "empty": "Жолдамалар жоқ"
+}

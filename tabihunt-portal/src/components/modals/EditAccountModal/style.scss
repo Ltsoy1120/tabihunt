@@ -1,0 +1,46 @@
+@import "@/assets/scss/bundle.scss";
+
+.edit-account-modal {
+  width: 100%;
+
+  &__title {
+    text-align-last: left;
+    @include Typography($font-size-2, 600, $color-gray-dark);
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      background: $color-gray-bg;
+      border-radius: $border-radius;
+      padding: 10px;
+
+      .edit-icon {
+        margin-right: 20px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        p {
+          @include Typography($font-size-3, 500, $color-gray-dark);
+        }
+        span {
+          text-align: left;
+        }
+      }
+
+      .arrow {
+        margin-left: auto;
+      }
+    }
+  }
+}

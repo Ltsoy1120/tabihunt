@@ -1,0 +1,63 @@
+{
+  "authPage": {
+    "title": "Қош келдіңіз! Тіркелгіңізге кіріңіз",
+    "emailTab": "Почта",
+    "numberTab": "Номер",
+    "emailInput": "Адрес почты",
+    "passwordInput": "Пароль",
+    "button": "Войти"
+  },
+  "recoveryPasswordPage": {
+    "title": "Құпия сөзді қалпына келтіру",
+    "emailTab": "Почта",
+    "numberTab": "Номер",
+    "emailInput": "Адрес почты",
+    "button": "Далее"
+  },
+  "otpPage": {
+    "titleEmail": "Электрондық пошта мекенжайыңызға алынған кодты енгізіңіз",
+    "titlePhone": "Введите код, полученный на ваш телефон",
+    "button": "Далее"
+  },
+  "newPasswordPage": {
+    "title": "Создайте новый пароль",
+    "button": "Обновить"
+  },
+  "accountPage": {
+    "bin": "БИН",
+    "contactInfo": "Контактная информация",
+    "subhead": "subhead",
+    "phoneNumber": "Номер",
+    "email": "Почта",
+    "location": "Местоположение",
+    "region": "Область",
+    "street": "Улица",
+    "home": "Дом",
+    "logout": "Выйти",
+    "settings": "Настройки",
+    "connectToSupport": "Связаться с поддержкой",
+    "password": "Пароль",
+    "lang": "Язык",
+    "select": "Выберете",
+    "no": "Нет",
+    "yes": "Да",
+    "quit": "Выйти, вы уверены?",
+    "support": "Служба поддержки",
+    "newPhoneNumber": "Новый номер телефона",
+    "foundMisstake": "Обнаружена ошибка",
+    "next": "Далее",
+    "cancel": "Отмена",
+    "newEmailAdres": "Новый почтовый адрес",
+    "newPassword": "Новый пароль",
+    "update": "Обновить",
+    "repeatPassword": "Повторите пароль",
+    "generatePassword": "Придумайте пароль",
+    "passwordRequirement": "Пароль должен содержать латинские буквы верхнего и нижнего регистра, а так же цифры и символы ",
+    "error": "Ошибка",
+    "verifyEmail": "Введите полученные код на ваш почтовый адрес",
+    "verifyPhone": "Введите полученные код на ваш номер телефона",
+    "inValidOtp": "Данный код не подходит",
+    "sendExtraCode": "Отправить еще",
+    "sendExtraCodeIn": "Отправить еще, через"
+  }
+}

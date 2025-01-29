@@ -1,0 +1,88 @@
+@import "@/assets/scss/base.scss";
+
+.plot-description-card-main {
+  width: 530px;
+  height: 240px;
+  display: flex;
+
+  .plot-description__img,
+  .plot-description__info {
+    width: 50%;
+  }
+
+  .plot-description__img {
+    border-radius: $border-radius;
+    overflow: hidden;
+  }
+
+  .plot-description__info {
+    width: 50%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3 {
+      @include Typography($font-size-1, 500, $color-gray-dark);
+      display: -webkit-box;
+      -webkit-line-clamp: 2; /* Количество строк, после которых текст будет обрезан */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis; /* Добавляет троеточие на конце */
+      margin-bottom: 20px;
+    }
+
+    p {
+      @include Typography($font-size-2, 400, $color-gray-dark);
+
+      display: -webkit-box;
+      -webkit-line-clamp: 5; /* Количество строк, после которых текст будет обрезан */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis; /* Добавляет троеточие на конце */
+      margin-bottom: 20px;
+    }
+
+    .button {
+      width: 100%;
+      height: 40px;
+      background: $color-main-light;
+      color: $color-main-dark;
+    }
+  }
+
+  @include Tablet {
+    width: 100%;
+  }
+
+  @include Mobile {
+    width: 100%;
+    height: auto;
+    @include Frame;
+    box-shadow: 0 0 8px $color-gray-dark;
+    padding: 10px;
+    flex-direction: column;
+    gap: 15px;
+    .plot-description__img,
+    .plot-description__info {
+      width: 100%;
+    }
+
+    .plot-description__img {
+      height: 150px;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .plot-description__info {
+      width: 100%;
+      padding-left: 0;
+
+      h3 {
+        @include Typography(21px, 600, #000000);
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

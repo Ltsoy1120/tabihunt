@@ -1,0 +1,133 @@
+{
+  "personal-info": {
+    "title": "Личная информация",
+    "personal-btn": "Личные данные",
+    "hunting-license-btn": "Удостоверение охотника",
+    "edit-btn": "Редактировать",
+    "personal": {
+      "title": "Личные данные",
+      "email": "Почта",
+      "phoneNumber": "Номер",
+      "dateOfBirth": "Дата рождения"
+    },
+    "identification": {
+      "title": "Удостоверение личности",
+      "iin": "ИИН",
+      "identificationNumber": "Номер",
+      "identificationIssued": "Выдано",
+      "identificationValid": "Годен до",
+      "identificationIssuedBy": "Кем"
+    },
+    "address": {
+      "title": "Адрес",
+      "region": "Область",
+      "city": "Город",
+      "street": "Улица/Микрорайон",
+      "houseNumber": "Дом",
+      "flatNumber": "Квартира"
+    },
+    "hunting-license": {
+      "huntingLicenseNumber": "Номер охот удостоверения",
+      "huntingLicenseValid": "Годен до",
+      "membership": "Членство",
+      "period": "Период",
+      "renew-btn": "Продлить членство",
+      "empty": "Членства нет"
+    }
+  },
+  "me-vouchers": {
+    "title": "Мои путевки",
+    "card": {
+      "voucherTypes": {
+        "seasonal": "Сезонная",
+        "one-time": "Разовая"
+      },
+      "more-details-btn": "Подробнее",
+      "download-btn": "Скачать"
+    },
+    "button": "Смотреть все",
+    "empty": "Путевок нет"
+  },
+  "me-reports": {
+    "title": "Мои отчеты",
+    "card": {
+      "voucherTypes": {
+        "seasonal": "Сезонная",
+        "one-time": "Разовая"
+      },
+      "voucher-number": "Номер путевки",
+      "see-report-btn": "Посмотреть отчет"
+    },
+    "button": "Смотреть все",
+    "empty": "Отчетов нет"
+  },
+  "photo-modal": {
+    "title": "Фото профиля",
+    "file-limit": "Размер файла превышает 2,5 МБ",
+    "button": "Сохранить"
+  },
+  "edit-account-modal": {
+    "title": "Редактирование",
+    "personal-info": {
+      "title": "Личная информация",
+      "text": "Имя, контакты, адрес"
+    },
+    "hunting-license": {
+      "title": "Удостоверение охотника",
+      "text": "Номер, срок действия"
+    },
+    "identity-card": {
+      "title": "Удостоверение личности",
+      "text": "ИИН, номер, выдан"
+    }
+  },
+  "form": {
+    "necessarily": "Обязательно",
+    "not-necessarily": "Не обязательно",
+    "progress-bar": {
+      "title": "Создание аккаунта",
+      "personal-data": "Персональные данные",
+      "identification": "Удостоверение личности",
+      "address": "Адрес",
+      "hunting-license": "Охотничье удостоверение"
+    },
+    "personal-data": {
+      "title": "Личные данные",
+      "lastname": "Фамилия",
+      "firstname": "Имя",
+      "patronymic": "Отчество",
+      "dateOfBirth": "Дата рождения",
+      "gender": "Пол",
+      "male": "Мужской",
+      "female": "Женский",
+      "phoneNumber": "Номер телефона",
+      "button": "Далее"
+    },
+    "address": {
+      "title": "Адрес",
+      "region": "Область",
+      "city": "Город",
+      "street": "Улица/Микрорайон",
+      "houseNumber": "Дом",
+      "flatNumber": "Квартира",
+      "button": "Далее"
+    },
+    "identification": {
+      "title": "Удостоверение личности",
+      "iin": "ИИН",
+      "identificationNumber": "Номер",
+      "identificationIssued": "Выдано",
+      "identificationValid": "Годен до",
+      "identificationIssuedBy": "Кем",
+      "choose-from-list": "Выберите из списка",
+      "button": "Далее"
+    },
+    "hunting-license": {
+      "title": "Удостоверение охотника",
+      "huntingLicenseNumber": "Номер",
+      "huntingLicenseIssued": "Выдано",
+      "huntingLicenseValid": "Годен до",
+      "button": "Далее"
+    }
+  }
+}

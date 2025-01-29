@@ -1,0 +1,47 @@
+@import "@/assets/scss/bundle.scss";
+
+.form-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 10px 20px;
+  border-bottom: 1px solid $color-gray-stroke;
+
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  h1 {
+    @include Typography(20px, 600, $color-gray-dark);
+  }
+
+  .button {
+    width: 120px;
+    height: 40px;
+  }
+
+  .link-button {
+    color: $color-gray-medium;
+    background: $color-gray-bg;
+    padding: 10px 15px;
+    border-radius: $border-radius;
+  }
+
+  .text-button {
+    @include Typography($font-size-2, 500, $color-gray-light);
+  }
+
+  @include Mobile {
+    padding: 10px 15px;
+    gap: 10px;
+    h1 {
+      text-align: center;
+      line-height: 20px;
+    }
+    .text-button {
+      display: none;
+    }
+  }
+}

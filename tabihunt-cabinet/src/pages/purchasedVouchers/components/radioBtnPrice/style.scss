@@ -1,0 +1,79 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.radioPrice {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  gap: 8px;
+  width: 40%;
+  height: 63px;
+  cursor: pointer;
+  padding: 16px 18px;
+  border-radius: $border-radius;
+  border: 1px solid $color-stroke-gray;
+
+  .real-radio {
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+  }
+
+  .custom-radio {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid $color-stroke-gray;
+    margin-right: 10px;
+    vertical-align: text-top;
+  }
+
+  /* точка внутри радио-кнопки */
+
+  .custom-radio::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $color-main-dark;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+
+    transition: 0.3s ease-in;
+  }
+
+  .real-radio:checked + .custom-radio {
+    border: 2px solid $color-main-dark;
+  }
+
+  .real-radio:checked + .custom-radio::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &-label {
+    cursor: pointer;
+    @include Typography($font-size-3, 400, $color-medium-gray);
+  }
+
+  .real-radio:checked + .custom-radio + .radio-label {
+    @include Typography($font-size-3, 600, $color-dark-gray);
+  }
+}
+
+
+.radioPriceTextGroup {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    text-align: center;
+    span {
+        @include Typography($font-size-3, 400, $color-medium-gray);
+    }
+    h2 {
+        @include Typography($font-size-2, 600, $color-dark-gray);
+    }
+}

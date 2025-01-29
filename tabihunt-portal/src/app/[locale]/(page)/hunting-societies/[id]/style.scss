@@ -1,0 +1,81 @@
+@import "@/assets/scss/bundle.scss";
+
+.huntingSociety-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  h2 {
+    @include Typography($font-size-1, 600, $color-gray-dark);
+    text-align: center;
+  }
+
+  .huntingSociety {
+    h3 {
+      @include Typography($font-size-1, 600, $color-gray-dark);
+    }
+
+    &__img {
+      border-radius: $border-radius;
+      overflow: hidden;
+      margin: 0 auto;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    &__instrucion {
+      @include Frame;
+    }
+
+    &__contacts {
+      display: flex;
+      align-items: flex-end;
+      gap: 100px;
+      margin-bottom: 20px;
+
+      @include Mobile {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .col {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      &-item {
+        @include Typography($font-size-3, 500, $color-gray-dark);
+        display: flex;
+        color: $color-gray-medium;
+
+        .icon {
+          margin-right: 10px;
+          min-width: 20px;
+        }
+
+        img {
+          width: 20px;
+          margin-right: 10px;
+        }
+
+        p {
+          @include Typography($font-size-3, 500, $color-gray-dark);
+        }
+      }
+
+      .button {
+        margin-top: auto;
+      }
+    }
+  }
+
+  @include Mobile {
+    h2 {
+      font-size: 21px;
+    }
+  }
+}

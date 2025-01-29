@@ -1,0 +1,236 @@
+{
+  "main": {
+    "plot-select": {
+      "title": "Все угодья",
+      "modal": {
+        "title": "Угодья",
+        "empty": "Угодьев по области нет",
+        "button": "Применить"
+      }
+    },
+    "animal-type-select": {
+      "title": "Тип дичи",
+      "feathered": "Пернатые и пушные",
+      "ungulate": "Копытные",
+      "modal": {
+        "all": "Все",
+        "button": "Применить"
+      }
+    },
+    "voucher-type-select": {
+      "title": "Тип путевки",
+      "seasonal": "Сезонная",
+      "one-time": "Разовая",
+      "modal": {
+        "all": "Все",
+        "button": "Применить"
+      }
+    },
+    "filters-btn": "Фильтры",
+    "filter-select-title": "Фильтр",
+    "voucher-search": "Поиск путевки по названию дичи",
+    "card": {
+      "voucher-duration": "Количество дней",
+      "voucher-type": {
+        "seasonal": "Сезонная",
+        "one-time": "Разовая"
+      },
+      "voucher-prices": {
+        "standardPrice": "Стандартная",
+        "membershipPrice": "Член Охот. Общества",
+        "preferentialPrice": "Льготная (Пенсионер)",
+        "specialPrice": "Специальная"
+      },
+      "voucher-animal": "Дичь",
+      "button": "Приобрести"
+    }
+  },
+  "page": {
+    "title": "Путевка",
+    "voucher-info": {
+      "title": "Характеристика",
+      "voucherType": {
+        "title": "Тип путевки",
+        "seasonal": "Сезонная",
+        "one-time": "Разовая"
+      },
+      "animalTypes": {
+        "title": "Тип дичи",
+        "all": "Пернатые, пушные / Копытные",
+        "feathered": "Пернатые, пушные",
+        "ungulate": "Копытные",
+        "empty": "Не указано"
+      },
+      "plot": "Угодье",
+      "duration": "Длительность",
+      "startDate": "Начало",
+      "endDate": "Конец"
+    },
+    "voucher-animals": {
+      "title": "Дичь на участке",
+      "search": "Поиск животного по названию",
+      "empty": "Животное не найдено"
+    },
+    "voucher-prices": {
+      "title": "Цена без учета дичи",
+      "headPrice": "Цена за голову",
+      "standardPrice": "Стандартная",
+      "membershipPrice": "Член Охот. Общества",
+      "preferentialPrice": "Льготная (Пенсионер)",
+      "specialPrice": "Специальная"
+    },
+    "me-voucher-animals": {
+      "title": "Приобретенная дичь",
+      "empty": "Животное не найдено"
+    },
+    "me-voucher-prices": {
+      "title": "Цена",
+      "voucher-price": "Цена без учета дичи",
+      "total-amount": "Общая сумма"
+    },
+    "warning": {
+      "title": "Создайте аккаунт",
+      "text": "Для покупки путевки необходимо зарегистрироваться на портале.",
+      "register-button": "Зарегистрироваться",
+      "has-account": "Уже есть аккаунт?",
+      "login-button": "Войти"
+    },
+    "button": "Перейти к формированию цены"
+  },
+  "form": {
+    "necessarily": "Обязательно",
+    "not-necessarily": "Не обязательно",
+    "stage1": {
+      "title": "Выберите дату",
+      "placeholder": "Выберите дату",
+      "limit-info": "Лимит на путевки исчерпан",
+      "date-warning": {
+        "title": "Выберите другую дату",
+        "text": "На этот день у вас уже оформлена путевка. Оформление нескольких путевок на одну и ту же дату не допускается.",
+        "button": "Понятно"
+      },
+      "mobile-btn": "Далее"
+    },
+    "stage2": {
+      "title": "Выберите виды дичи для охоты",
+      "animalTypes": {
+        "feathered": "Пернатые и пушные",
+        "ungulate": "Копытные"
+      },
+      "animal-search": "Поиск животного по названию",
+      "animal-limit-head": "Кол-во на путевку",
+      "add-button": "Добавить",
+      "add-animal-button": "Добавить дичь",
+      "not-available": "Недоступно для охоты",
+      "basket": "Корзина",
+      "continue-btn": "Далее",
+      "hunting-date-warning": {
+        "title": "Животное недоступно",
+        "text": "Выбранное Вами животное для охоты временно недоступно. Данный вид имеет установленный период охоты, который не совпадает с выбранным вами сроком для путевки.",
+        "button": "Понятно"
+      },
+      "voucher-limit-heads-warning": {
+        "title": "Вы достигли лимита",
+        "text": "Вы достигли лимита по количеству голов дичи в Вашей путевке. Пожалуйста, соблюдайте установленные правила охоты и не превышайте допустимые нормы.",
+        "button": "Понятно"
+      },
+      "animal-imit-heads-warning": {
+        "title": "Животное недоступно",
+        "text": "Выбранное вами животное для охоты временно недоступно для приобретения. К сожалению, лимит на количество голов данного вида исчерпан.",
+        "button": "Понятно"
+      },
+      "animal-available-heads-warning": {
+        "title": "Животное недоступно",
+        "text": "Вы достигли лимита. Доступный остаток - ",
+        "pieces": "шт.",
+        "button": "Понятно"
+      }
+    },
+    "stage3": {
+      "title": "Проверьте данные",
+      "personal-data": {
+        "title": "Личная информация",
+        "lastname": "Фамилия",
+        "firstname": "Имя",
+        "patronymic": "Отчество",
+        "dateOfBirth": "Дата рождения",
+        "iin": "ИИН"
+      },
+      "contacts-data": {
+        "title": "Контактная информация",
+        "phoneNumber": "Номер телефона",
+        "email": "Почта"
+      }
+    },
+    "stage4": {
+      "title": "Проверьте данные",
+      "address": {
+        "title": "Адрес",
+        "region": "Область",
+        "city": "Город",
+        "street": "Улица/Микрорайон",
+        "houseNumber": "Дом",
+        "flatNumber": "Квартира"
+      },
+      "hunting-license": {
+        "title": "Удостоверение охотника",
+        "huntingLicenseNumber": "Номер",
+        "huntingLicenseIssued": "Выдано",
+        "huntingLicenseValid": "Годен до"
+      }
+    },
+    "stage5": {
+      "title": "Путевка",
+      "voucher-info": {
+        "voucher": "Путевка",
+        "plot": "",
+        "voucherType": ""
+      },
+      "voucher-type": {
+        "seasonal": "Сезонная",
+        "one-time": "Разовая"
+      },
+      "animals-info": {
+        "title": "Приобретаемая дичь"
+      },
+      "checkbox": "Я согласен с",
+      "checkbox-link": "правилами Охотничьего хозяйства",
+      "total-amount": "Сумма к оплате",
+      "go-to-payment": "Перейти к оплате"
+    },
+    "payment": {
+      "title": "Выберите способ оплаты",
+      "card": "Карта",
+      "kaspi": "Kaspi QR",
+      "payment-success-modal": {
+        "title": "Оплата проведена успешно!",
+        "text": "Благодарим за использование нашего сервиса. Мы отправили подтверждение оплаты и информацию о заказе на Ваш адрес электронной почты",
+        "download": "Скачать путевку",
+        "redirect": "Перейти к путевке"
+      }
+    }
+  },
+  "me-vouchers": {
+    "voucher-type-select": {
+      "title": "Все путевки",
+      "actual": "Актуальные",
+      "archive": "Архивные"
+    },
+    "modal": {
+      "title": "Тип путевки",
+      "all": "Все",
+      "actual": "Актуальные",
+      "archive": "Архивные",
+      "button": "Применить"
+    },
+    "card": {
+      "voucher-number": "Номер",
+      "create-voucher-report-btn": "Создать отчет о путевке",
+      "voucher-report-mobile-btn": "Отчет",
+      "voucher-download-btn": "Скачать путевку",
+      "button": "Подробнее"
+    },
+    "search": "Поиск путевки по названию охот угодья"
+  },
+  "empty": "Путевок нет"
+}

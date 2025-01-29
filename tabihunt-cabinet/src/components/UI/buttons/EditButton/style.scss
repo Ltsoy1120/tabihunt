@@ -1,0 +1,20 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.edit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-blue;
+  background: $color-light-blue;
+  width: 120px;
+  box-sizing: border-box;
+
+  &:hover {
+    color: $color-blue;
+    background: #cde6f8;
+  }
+
+  .icon {
+    margin-left: 10px;
+  }
+}

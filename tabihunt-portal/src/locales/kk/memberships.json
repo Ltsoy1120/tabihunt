@@ -1,0 +1,60 @@
+{
+  "form": {
+    "stage1": {
+      "title": "Деректерді тексеріңіз",
+      "personal": {
+        "title": "Жеке деректер",
+        "email": "Пошта",
+        "phoneNumber": "Телефон нөмірі",
+        "dateOfBirth": "Туған күні"
+      },
+      "address": {
+        "title": "Мекен-жайы",
+        "region": "Облыс",
+        "city": "Қала",
+        "street": "Көше / Шағын Аудан",
+        "houseNumber": "Үй",
+        "flatNumber": "Пәтер"
+      },
+      "hunting-lisense": {
+        "huntingLicenseNumber": "Аңшылық куәлігінің нөмірі",
+        "huntingLicenseValid": "Дейін жарамды"
+      },
+      "memberships": {
+        "memberships": "Мүшелік",
+        "period": "Кезең"
+      },
+      "btn": "Келесі"
+    },
+    "stage2": {
+      "title": "Мерзімін таңдаңыз",
+      "select-title": "Мерзімі",
+      "year": "жыл",
+      "years": "жыл",
+      "1year": "1 жыл",
+      "2year": "2 жыл",
+      "3year": "3 жыл",
+      "btn": "Келесі"
+    },
+    "stage3": {
+      "title": "Себет",
+      "operation": "Операция",
+      "membership-renew": "Мүшелікті ұзарту",
+      "period": "Мерзімі",
+      "year": "жыл",
+      "years": "жыл",
+      "payment-amount": "Төлем сомасы",
+      "btn": "Ұзарту"
+    },
+    "payment": {
+      "title": "Төлем әдісін таңдаңыз",
+      "card": "Карта",
+      "kaspi": "Kaspi QR",
+      "payment-success-modal": {
+        "title": "Төлем сәтті жүргізілді!",
+        "text": "Біздің қызметті пайдаланғаныңыз үшін рахмет. Біз аңшылық қоғамға мүшелікті ұзарту үшін төлемді растайтын құжат жібергенімізді хабарлауға қуаныштымыз.",
+        "redirect": "Тіркелгіге өтіңіз"
+      }
+    }
+  }
+}

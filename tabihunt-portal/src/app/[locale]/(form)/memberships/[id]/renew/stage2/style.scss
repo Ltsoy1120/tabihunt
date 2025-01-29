@@ -1,0 +1,49 @@
+@import "@/assets/scss/bundle.scss";
+
+.membershipsRenew-stage2 {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  h2 {
+    @include Typography(21px, 500, $color-gray-dark);
+  }
+
+  .years-select {
+    @include Frame;
+    width: 420px;
+
+    &__title {
+      @include Typography($font-size-3, 500, $color-gray-medium);
+      padding-bottom: 20px;
+      border-bottom: 1px solid $color-gray-stroke;
+    }
+
+    .radio {
+      margin-top: 20px;
+    }
+  }
+
+  @include Mobile {
+    width: 100%;
+    padding: 80px 15px 0;
+
+    .years-select {
+      width: 100%;
+    }
+
+    a {
+      width: calc(100% - 30px);
+      position: fixed;
+      bottom: 20px;
+      .button {
+        width: 100%;
+        height: 50px;
+
+        padding: 0;
+      }
+    }
+  }
+}

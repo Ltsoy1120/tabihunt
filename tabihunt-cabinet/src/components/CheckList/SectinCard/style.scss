@@ -1,0 +1,26 @@
+@import "../../../assets/scss/bundle.scss";
+
+.section-card {
+  background: $color-bg-gray;
+  border-radius: $border-radius;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+
+  h2 {
+    @include Typography($font-size-2, 500, $color-dark-gray);
+    margin-bottom: 5px;
+  }
+
+  p {
+    @include Typography($font-size-4, 400, $color-medium-gray);
+  }
+
+  .empty-check {
+    min-width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid $color-stroke-gray;
+  }
+}

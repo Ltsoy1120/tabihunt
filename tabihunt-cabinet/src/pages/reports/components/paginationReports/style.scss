@@ -1,0 +1,33 @@
+.paginationReport {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+    button {
+        margin-left: 10px;
+        margin-right: 10px;
+        svg{
+            margin: 0 !important
+        }
+    }
+    h1 {
+        font-size: 20px;
+    }
+    button:first-child {
+        color: red;
+        svg {
+            transform: rotate(90deg);
+        }
+    }
+    
+    button:last-child {
+        
+        svg {
+            transform: rotate(270deg);
+        }
+    }
+}
+.active {
+    background: none;
+    color: black;
+}

@@ -1,0 +1,14 @@
+@import "@/assets/scss/base.scss";
+
+.me-vouchers-page {
+  width: 1000px;
+  min-height: calc(100vh - 382px);
+  @include Frame;
+  padding: 0;
+  margin: 20px 40px 20px 160px;
+
+  @include Mobile {
+    width: calc(100% - 30px);
+    margin: 15px;
+  }
+}

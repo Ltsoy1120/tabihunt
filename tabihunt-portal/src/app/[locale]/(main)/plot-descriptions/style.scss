@@ -1,0 +1,24 @@
+@import "@/assets/scss/base.scss";
+
+.plot-descriptions-page {
+  min-height: calc(100vh - 382px);
+  margin: 20px 40px 20px 160px;
+
+  h1 {
+    @include Typography($font-size-1, 600, $color-gray-dark);
+    margin-bottom: 10px;
+  }
+  p {
+    @include Typography($font-size-3, 500, $color-gray-dark);
+    margin-bottom: 20px;
+  }
+
+  .plot-descriptions {
+    @include Frame;
+    padding: 0;
+  }
+
+  @include Mobile {
+    margin: 20px 15px;
+  }
+}

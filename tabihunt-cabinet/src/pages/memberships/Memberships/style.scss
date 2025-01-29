@@ -1,0 +1,74 @@
+@import "../../../assets/scss/bundle.scss";
+
+.memberships {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__actions {
+    display: flex;
+    gap: 10px;
+
+    .button {
+      border: 1px solid $color-stroke-gray;
+      background: white;
+      color: $color-medium-gray;
+    }
+
+    .active {
+      box-shadow: 0px 3px 8px 0px #00000040;
+      color: $color-dark-gray;
+    }
+  }
+
+  &__wrappers {
+    display: flex;
+    gap: 20px;
+  }
+
+  &-info {
+    width: 50%;
+    height: 100%;
+    @include Frame;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .button {
+        width: 125px;
+        height: 40px;
+      }
+
+      .text-button {
+        @include Typography($font-size-1, 500, $color-dark-gray);
+
+        svg {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.limits-modal {
+  width: 100%;
+
+  &__title {
+    text-align-last: left;
+    @include Typography(20px, 600, $color-dark-gray);
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

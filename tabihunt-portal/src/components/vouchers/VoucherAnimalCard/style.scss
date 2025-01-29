@@ -1,0 +1,73 @@
+@import "@/assets/scss/base.scss";
+
+.voucher-animal-card {
+  @include Frame;
+  padding: 10px;
+  width: 30%;
+
+  @include Mobile {
+    width: 100%;
+  }
+
+  h3 {
+    margin-bottom: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Количество строк, после которых текст будет обрезан */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Добавляет троеточие на конце */
+  }
+
+  &__select {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &-btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .circle {
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        background: $color-gray-bg;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .voucherAnimalPrices__list {
+    @include Frame;
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+
+      @include Mobile {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $color-gray-stroke;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        span {
+          text-align: center;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}

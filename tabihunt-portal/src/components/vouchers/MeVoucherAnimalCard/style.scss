@@ -1,0 +1,30 @@
+@import "@/assets/scss/base.scss";
+
+.voucher-animal-card {
+  @include Frame;
+  padding: 10px;
+  width: 360px;
+
+  .voucher-animal-info {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      @include Typography($font-size-2, 500, $color-gray-dark);
+    }
+
+    p {
+      @include Frame;
+      padding: 5px 10px;
+      @include Typography($font-size-4, 500, $color-gray-dark);
+    }
+  }
+
+  .voucher-animal-price {
+    @include Frame;
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+}

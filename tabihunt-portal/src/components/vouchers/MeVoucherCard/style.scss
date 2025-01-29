@@ -1,0 +1,118 @@
+@import "@/assets/scss/base.scss";
+
+.me-voucher-card {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+
+  &__img {
+    width: 170px;
+    min-width: 170px;
+    height: 170px;
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    @include Frame;
+
+    .me-voucher-card__head {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $color-gray-stroke;
+      margin-bottom: 20px;
+
+      .me-voucher__number {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .me-voucher-card__btns {
+        a:first-child .button {
+          background: $color-gray-bg;
+          color: $color-gray-medium;
+          margin-right: 10px;
+        }
+
+        a:last-child .button {
+          background: $color-main-light;
+          color: $color-main;
+        }
+      }
+    }
+
+    .me-voucher-card__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-wrap {
+        display: flex;
+        gap: 10px;
+
+        .me-voucher-animal {
+          display: flex;
+          gap: 5px;
+        }
+
+        .me-voucher-info {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+        }
+      }
+    }
+  }
+
+  @include Mobile {
+    flex-direction: column;
+    gap: 15px;
+
+    &__img {
+      width: 100%;
+    }
+
+    &__wrapper {
+      padding: 15px;
+    }
+
+    .me-voucher-card__info {
+      width: 100%;
+      flex-direction: column;
+      align-items: stretch;
+      h3 {
+        font-size: $font-size-3;
+      }
+      &-wrap {
+        padding-bottom: 15px;
+        border-bottom: 1px solid $color-gray-stroke;
+        margin-bottom: 15px;
+      }
+
+      a,
+      .button {
+        width: 100%;
+      }
+    }
+
+    .me-voucher-card__btns {
+      a:last-child {
+        width: 40px;
+        .button {
+          width: 40px;
+          padding: 0;
+        }
+        .icon {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.link-button {
+  border: none;
+  text-align: center;
+  cursor: pointer;
+
+  @include Typography($font-size-3, 500, $color-main);
+
+  &:hover {
+    color: $color-main;
+  }
+  &:disabled {
+    background: $color-gray;
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../assets/scss/bundle.scss";
+
+.check-list {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @include Frame;
+
+  &__text {
+    text-align: center;
+    @include Typography($font-size-2, 400, $color-medium-gray);
+  }
+}

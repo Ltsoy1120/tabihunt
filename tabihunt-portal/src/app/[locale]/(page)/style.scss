@@ -1,0 +1,26 @@
+@import "@/assets/scss/base.scss";
+
+.page-layout {
+  &__wrapper {
+    padding-top: 60px;
+  }
+
+  &__container {
+    max-width: 1200px;
+    min-height: calc(100svh - 342px);
+    margin: 0 auto;
+    padding: 20px;
+    @include Mobile {
+      padding: 20px 15px;
+    }
+
+    .back {
+      margin-bottom: 20px;
+      width: fit-content;
+    }
+  }
+
+  .footer {
+    margin-left: 0;
+  }
+}

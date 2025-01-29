@@ -1,0 +1,26 @@
+@import "@/assets/scss/bundle.scss";
+
+.outline-button {
+  border: 2px solid $color-main;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 73px;
+  padding: 10px 15px 10px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  @include Typography($font-size-3, 500, $color-gray-dark);
+
+  &:hover {
+    color: $color-main-dark;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    color: $color-gray-medium;
+  }
+
+  .icon {
+    margin-left: 8px;
+  }
+}

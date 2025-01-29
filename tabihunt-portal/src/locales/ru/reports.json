@@ -1,0 +1,20 @@
+{
+  "title": "Мои отчеты",
+  "subtitle": "Отчет по фактическому изъятию природных ресурсов",
+  "voucher-search": "Поиск по номеру путевки",
+  "card": {
+    "voucher-number": "Номер путевки",
+    "voucher-report-mobile-btn": "Отчет",
+    "voucher-report-btn": "Отчет о путевке",
+    "create-voucher-report-btn": "Создать отчет о путевке"
+  },
+  "report-table": {
+    "date": "Дата",
+    "voucher-number": "Номер путевки",
+    "animal-type": "Вид дичи",
+    "animals-number": "Количество",
+    "plot": "Охотничье угодье"
+  },
+  "report-btn-mobile": "Отправить",
+  "empty": "У вас нет еще приобретенных путевок"
+}

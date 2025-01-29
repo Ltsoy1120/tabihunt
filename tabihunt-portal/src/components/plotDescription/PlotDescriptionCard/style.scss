@@ -1,0 +1,124 @@
+@import "@/assets/scss/base.scss";
+
+.plotDescription-card {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+
+  &__img {
+    width: 250px;
+    height: 250px;
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    width: calc(100% - 250px);
+    @include Frame;
+    padding: 15px;
+
+    h3 {
+      @include Typography($font-size-1, 500, $color-gray-dark);
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      @include Typography($font-size-4, 600, $color-gray-dark);
+      margin-bottom: 15px;
+    }
+
+    .plotDescription-card__head {
+      padding-bottom: 10px;
+      border-bottom: 1px solid $color-gray-stroke;
+      margin-bottom: 10px;
+
+      p {
+        @include Typography($font-size-2, 400, $color-gray-dark);
+        line-height: 20px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Количество строк, после которых текст будет обрезан */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis; /* Добавляет троеточие на конце */
+      }
+    }
+
+    .plotDescription__contacts {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+
+      .col {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        a {
+          white-space: nowrap;
+        }
+      }
+
+      &-item {
+        @include Typography($font-size-3, 500, $color-gray-dark);
+        display: flex;
+        color: $color-gray-medium;
+
+        .icon {
+          margin-right: 10px;
+          min-width: 20px;
+        }
+
+        img {
+          width: 20px;
+          margin-right: 10px;
+        }
+
+        p {
+          @include Typography($font-size-3, 500, $color-gray-dark);
+          margin-bottom: 0;
+        }
+      }
+
+      .button {
+        margin-top: auto;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  @include Mobile {
+    flex-direction: column;
+    @include Frame;
+    padding: 10px;
+    background: $color-main-light;
+    box-shadow: 0 0 8px $color-gray-dark;
+
+    &__img,
+    &__info {
+      width: 100%;
+    }
+
+    &__img {
+      height: 150px;
+    }
+
+    &__info {
+      background: $color-white;
+    }
+
+    .plotDescription__contacts {
+      flex-direction: column;
+      .col {
+        width: 100% !important;
+      }
+      a,
+      .button {
+        width: 100%;
+      }
+    }
+  }
+}

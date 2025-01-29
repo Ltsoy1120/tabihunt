@@ -1,0 +1,11 @@
+@import "@/assets/scss/base.scss";
+
+.label {
+  height: 40px;
+  border-radius: $border-radius;
+  background: $color-main-light;
+  color: $color-main-dark;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+}

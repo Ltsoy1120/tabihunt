@@ -1,0 +1,13 @@
+@import "@/assets/scss/bundle.scss";
+
+.form-layout__main {
+  @include Frame;
+  margin: 80px 20px 20px;
+  padding: 0;
+  display: flex;
+
+  @include Mobile {
+    margin: 0;
+    border: none;
+  }
+}

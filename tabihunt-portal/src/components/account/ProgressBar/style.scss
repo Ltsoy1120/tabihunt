@@ -1,0 +1,80 @@
+@import "@/assets/scss/bundle.scss";
+
+.progress-bar {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 40px 20px;
+  border-right: 1px solid $color-gray-stroke;
+
+  .logo {
+    width: 140px;
+  }
+
+  h2 {
+    @include Typography($font-size-1, 500, #000000);
+    white-space: nowrap;
+  }
+
+  .progress {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+      &__title {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        span {
+          display: block;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: $color-main-light;
+        }
+
+        h3 {
+          width: 140px;
+          text-align: center;
+          @include Typography($font-size-3, 500, #000000);
+
+          &.active {
+            color: $color-main;
+          }
+        }
+      }
+
+      &__line {
+        height: 60px;
+        border-left: 1px solid $color-main-light;
+        margin: 10px 0 10px 20px;
+      }
+
+      &:last-child .progress__item__line {
+        display: none;
+      }
+    }
+
+    .completed {
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: $color-green;
+      }
+
+      h3 {
+        @include Typography($font-size-3, 500, $color-green);
+      }
+
+      .progress__item__line {
+        border-left: 2px solid $color-green;
+      }
+    }
+  }
+}

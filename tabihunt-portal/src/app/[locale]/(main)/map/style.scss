@@ -1,0 +1,22 @@
+@import "@/assets/scss/base.scss";
+
+.map-page {
+  width: 1000px;
+  min-height: calc(100vh - 382px);
+  padding: 0;
+  margin: 20px 40px 20px 160px;
+
+  h2 {
+    @include Typography($font-size-1, 600, $color-gray-dark);
+    margin-bottom: 20px;
+  }
+
+  @include Mobile {
+    width: calc(100% - 30px);
+    margin: 20px 15px;
+
+    iframe {
+      width: 100%;
+    }
+  }
+}

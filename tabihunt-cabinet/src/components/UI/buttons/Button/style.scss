@@ -1,0 +1,9 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.button {
+  @include Button;
+
+  .icon {
+    margin-left: 10px;
+  }
+}

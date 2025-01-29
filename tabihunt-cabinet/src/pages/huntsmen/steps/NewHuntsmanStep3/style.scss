@@ -1,0 +1,28 @@
+@import "../../../../assets/scss/base.scss";
+
+.new-huntsman-step3 {
+  width: 560px;
+  @include Frame;
+  margin: 0 auto;
+
+  h2 {
+    @include Typography(21px, 500, $color-dark-gray);
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-stroke-gray;
+  }
+
+  h3 {
+    @include Typography($font-size-2, 500, $color-dark-gray);
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .new-password__error {
+    color: $color-red;
+  }
+}

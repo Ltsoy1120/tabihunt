@@ -1,0 +1,231 @@
+@import "@/assets/scss/bundle.scss";
+
+.account-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 140px;
+  padding: 20px;
+
+  h2 {
+    @include Typography($font-size-1, 600, $color-gray-dark);
+    margin-bottom: 10px;
+  }
+
+  .personal-data {
+    @include Frame;
+    display: flex;
+    flex-direction: column;
+
+    .btns {
+      display: flex;
+      gap: 10px;
+      margin-left: auto;
+      margin-bottom: 20px;
+
+      .button {
+        color: $color-main;
+        background: $color-main-light;
+        &:hover {
+          background: #ebe5dd;
+        }
+      }
+
+      .gray-bg {
+        color: $color-gray-medium;
+        background: $color-gray-bg;
+        &:hover {
+          background: #e5e8ee;
+        }
+      }
+    }
+
+    &__content {
+      display: flex;
+      gap: 20px;
+
+      .hunting-lisense {
+        display: flex;
+        gap: 20px;
+        margin: 0 auto;
+
+        &__card {
+          width: 320px;
+          @include Frame;
+          height: fit-content;
+
+          &__row {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+              @include Typography($font-size-3, 500, $color-gray-dark);
+            }
+
+            span,
+            p {
+              width: 50%;
+              &:first-child {
+                border-right: 1px solid $color-gray-stroke;
+              }
+              &:last-child {
+                padding-left: 20px;
+              }
+            }
+
+            &:first-child {
+              padding-bottom: 10px;
+              border-bottom: 1px solid $color-gray-stroke;
+            }
+
+            &:last-child {
+              padding-top: 10px;
+            }
+          }
+
+          &__col {
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid $color-gray-stroke;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            .hunting-lisense__card__row:first-child {
+              border-bottom: none;
+            }
+
+            &:last-child {
+              padding-bottom: 0;
+              border-bottom: none;
+            }
+
+            a {
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      .info {
+        width: 70%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        &__col {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        &__card {
+          width: 300px;
+          height: fit-content;
+          @include Frame;
+
+          h2 {
+            @include Typography($font-size-2, 500, $color-gray-dark);
+            .icon {
+              margin-left: 10px;
+            }
+          }
+
+          .data {
+            padding-top: 20px;
+            border-top: 1px solid $color-gray-stroke;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            &__row {
+              height: fit-content;
+              display: flex;
+              justify-content: space-between;
+              gap: 20px;
+            }
+            &__col {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+            }
+
+            &__item {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+
+              p {
+                @include Typography($font-size-3, 500, $color-gray-dark);
+              }
+
+              span {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__avatar {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        @include Typography(20px, 600, $color-main);
+        line-height: 24px;
+        text-align: center;
+      }
+    }
+  }
+
+  .my-vouchers,
+  .my-reports {
+    @include Frame;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @include Mobile {
+    margin-left: 0;
+    padding: 15px;
+
+    .icon-ml {
+      margin-left: 15px;
+    }
+    .personal-data {
+      padding: 15px 10px;
+      &__content {
+        flex-direction: column;
+
+        .info,
+        .info__col,
+        .info__card {
+          width: 100%;
+        }
+        .info__card {
+          padding: 15px 15px 5px;
+        }
+
+        .hunting-lisense {
+          width: 100%;
+          flex-direction: column;
+          &__card {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .my-vouchers,
+    .my-reports {
+      padding: 15px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import "../../../assets/scss/bundle.scss";
+
+.new-plot-description-step4 {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  img {
+    height: 300px;
+    object-fit: contain;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+
+    .row {
+      display: flex;
+      gap: 20px;
+    }
+
+    .badge {
+      @include Frame;
+      padding: 10px 15px;
+    }
+  }
+  h2 {
+    @include Typography(21px, 600, $color-dark-gray);
+  }
+
+  .working-hours__block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      img {
+        width: 20px;
+        height: auto;
+      }
+    }
+  }
+  .map {
+    width: 500px;
+    height: 300px;
+  }
+}

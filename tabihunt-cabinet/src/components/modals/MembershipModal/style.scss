@@ -1,0 +1,63 @@
+@import "../../../assets/scss/bundle.scss";
+
+.membership-modal__person{
+    width: 300px;
+    background-color: $color-bg-gray;
+    padding: 10px 20px;
+    border-radius: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+
+    img {
+        width: 15px;
+    }
+    h1 {
+        font-weight: 500;
+    }
+}
+
+.preview-icon {
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+ 
+    cursor: pointer;
+    background-color:$color-bg-gray ;
+}
+
+.membership__uploadTable {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    justify-content: space-between;
+}
+.uploadData {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    button {
+        margin-top: 20px;
+        margin-left: 60px;
+    }
+}
+.FileInputUpload {
+    width: 300px;
+}
+.uploadData__main {
+    display: flex;
+    align-items: center;
+}
+.uploadData__title {
+    h1{font-size: 18px;}
+}
+.removeIcon {
+    margin-left: 20px;
+    margin-top: 40px;
+}

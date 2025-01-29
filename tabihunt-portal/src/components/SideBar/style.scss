@@ -1,0 +1,197 @@
+@import "@/assets/scss/bundle.scss";
+
+.sidebar {
+  width: 100px;
+  height: fit-content;
+  color: #fff;
+  position: fixed;
+  z-index: 5;
+  transition: width 0.3s;
+  margin: 20px;
+  background: $color-white;
+  @include Frame;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &.expanded {
+    width: fit-content;
+  }
+
+  .toggleButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    @include Frame;
+    padding: 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: $color-white;
+    position: absolute;
+    top: 30px;
+    right: -25px;
+    z-index: 5;
+    color: $color-gray-medium;
+  }
+
+  .menu {
+    max-height: 300px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+
+    &__item {
+      padding: 0 10px;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      color: $color-gray-medium;
+
+      &:last-child {
+        .icon {
+          padding-left: 5px;
+          padding-top: 5px;
+        }
+      }
+
+      &.active {
+        color: $color-main;
+        span {
+          color: $color-main;
+        }
+      }
+    }
+
+    &__item:hover {
+      color: $color-main;
+      span {
+        color: $color-main;
+      }
+    }
+  }
+
+  .menu.me {
+    margin-top: 50px;
+  }
+
+  .title {
+    @include Typography($font-size-3, 500, $color-gray-medium);
+    margin-left: 10px;
+    display: none;
+    opacity: 0;
+    @include Mobile() {
+      display: block;
+      opacity: 1;
+    }
+    &.show {
+      display: block;
+      animation: fadeIn 0.3s ease-out 0.3s forwards;
+    }
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .logout-btn,
+  .login-btn {
+    padding: 10px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    color: $color-gray-medium;
+    width: 180px;
+
+    &:hover {
+      color: $color-main;
+    }
+  }
+
+  .logout-btn {
+    padding: 0 10px;
+  }
+
+  .login-btn {
+    margin-top: 50px;
+
+    &__bg {
+      width: 30px;
+      height: 30px;
+      background: radial-gradient(
+        100% 100% at 50% 0%,
+        #cfc0a7 0%,
+        #c3b091 100%
+      );
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color-white;
+
+      svg {
+        margin-left: 3px;
+      }
+    }
+  }
+
+  @include Mobile() {
+    display: none;
+    height: 100svh;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    &.expanded {
+      display: block;
+    }
+
+    &-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .logo {
+      width: 100%;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $color-gray-stroke;
+      img {
+        width: 140px;
+      }
+    }
+
+    .menu-wrapper {
+      height: 100svh;
+      overflow-y: scroll;
+    }
+  }
+}

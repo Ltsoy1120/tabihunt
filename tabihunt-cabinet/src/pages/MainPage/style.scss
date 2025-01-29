@@ -1,0 +1,24 @@
+@import "../../assets/scss/bundle.scss";
+
+.main {
+  display: flex;
+  gap: 20px;
+
+  &__img {
+    width: 40%;
+  }
+
+  &__info {
+    width: 60%;
+    @include Frame;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+    h1 {
+      color: $color-main-dark;
+    }
+  }
+}

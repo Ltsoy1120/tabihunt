@@ -1,0 +1,60 @@
+{
+  "form": {
+    "stage1": {
+      "title": "Проверьте данные",
+      "personal": {
+        "title": "Личные данные",
+        "email": "Почта",
+        "phoneNumber": "Номер телефона",
+        "dateOfBirth": "Дата рождения"
+      },
+      "address": {
+        "title": "Адрес",
+        "region": "Область",
+        "city": "Город",
+        "street": "Улица/Микрорайон",
+        "houseNumber": "Дом",
+        "flatNumber": "Квартира"
+      },
+      "hunting-lisense": {
+        "huntingLicenseNumber": "Номер охот удостоверения",
+        "huntingLicenseValid": "Годен до"
+      },
+      "memberships": {
+        "memberships": "Членство",
+        "period": "Период"
+      },
+      "btn": "Далее"
+    },
+    "stage2": {
+      "title": "Выберите срок",
+      "select-title": "Срок",
+      "year": "год",
+      "years": "года",
+      "1year": "1 год",
+      "2year": "2 года",
+      "3year": "3 года",
+      "btn": "Далее"
+    },
+    "stage3": {
+      "title": "Корзина",
+      "operation": "Операция",
+      "membership-renew": "Продление членства",
+      "period": "Срок",
+      "year": "год",
+      "years": "года",
+      "payment-amount": "Сумма к оплате",
+      "btn": "Продлить"
+    },
+    "payment": {
+      "title": "Выберите способ оплаты",
+      "card": "Карта",
+      "kaspi": "Kaspi QR",
+      "payment-success-modal": {
+        "title": "Оплата проведена успешно!",
+        "text": "Благодарим вас за использование нашего сервиса. Мы рады сообщить, что отправили в охотничье общество подтверждение оплаты продления членства.",
+        "redirect": "Перейти в аккаунт"
+      }
+    }
+  }
+}

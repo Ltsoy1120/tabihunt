@@ -1,0 +1,72 @@
+@import "@/assets/scss/bundle.scss";
+
+.hunting-license-form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 60px;
+
+  &__col {
+    width: calc(50% - 20px);
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h3 {
+      @include Typography($font-size-2, 500, $color-gray-dark);
+      margin-bottom: -10px;
+    }
+  }
+
+  .button {
+    margin: 0 auto;
+    margin-top: auto;
+    width: 100%;
+    height: 50px;
+  }
+
+  .button:disabled {
+    background: none;
+    color: $color-gray-light;
+  }
+
+  @include Mobile {
+    padding: 80px 15px;
+    justify-content: center;
+    gap: 20px;
+
+    h2 {
+      @include Typography($font-size-1, 600, $color-gray-dark);
+      text-align: center;
+    }
+
+    &__col {
+      width: 100%;
+      min-width: 100%;
+    }
+
+    .button {
+      width: calc(100% - 30px);
+      position: fixed;
+      bottom: 20px;
+      height: 50px;
+      padding: 0;
+
+      &:disabled {
+        width: calc(100% - 30px);
+        border: 1px solid $color-gray-stroke;
+        background: white;
+      }
+    }
+  }
+}
+
+.hunting-license-loader {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

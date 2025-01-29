@@ -1,0 +1,133 @@
+{
+  "personal-info": {
+    "title": "Жеке ақпарат",
+    "personal-btn": "Жеке деректер",
+    "hunting-license-btn": "Аңшы куәлігі",
+    "edit-btn": "Өңдеу",
+    "personal": {
+      "title": "Жеке деректер",
+      "email": "Пошта",
+      "phoneNumber": "Нөмірі",
+      "dateOfBirth": "Туған күні"
+    },
+    "identification": {
+      "title": "Жеке куәлік",
+      "iin": "ЖСН",
+      "identificationNumber": "Нөмірі",
+      "identificationIssued": "Берілген",
+      "identificationValid": "Дейін жарамды",
+      "identificationIssuedBy": "Кім"
+    },
+    "address": {
+      "title": "Мекен-жайы",
+      "region": "Облыс",
+      "city": "Қала",
+      "street": "Көше / Шағын Аудан",
+      "houseNumber": "Үй",
+      "flatNumber": "Пәтер"
+    },
+    "hunting-license": {
+      "huntingLicenseNumber": "Аңшылық куәлігінің нөмірі",
+      "huntingLicenseValid": "Дейін жарамды",
+      "membership": "Мүшелік",
+      "period": "Кезең",
+      "renew-btn": "Мүшелікті ұзарту",
+      "empty": "Мүшелік жоқ"
+    }
+  },
+  "me-vouchers": {
+    "title": "Менің жолдамаларым",
+    "card": {
+      "voucherTypes": {
+        "seasonal": "Маусымдық",
+        "one-time": "Бір реттік"
+      },
+      "more-details-btn": "Толығырақ",
+      "download-btn": "Жүктеу"
+    },
+    "button": "Барлығын қараңыз",
+    "empty": "Жолдамалар жоқ"
+  },
+  "me-reports": {
+    "title": "Менің есептерім",
+    "card": {
+      "voucherTypes": {
+        "seasonal": "Маусымдық",
+        "one-time": "Бір реттік"
+      },
+      "voucher-number": "Жолдама нөмірі",
+      "see-report-btn": "Есепті қарау"
+    },
+    "button": "Барлығын қараңыз",
+    "empty": "Есептер жоқ"
+  },
+  "photo-modal": {
+    "title": "Профиль суреті",
+    "file-limit": "Файл өлшемі 2,5 МБ-тан асады",
+    "button": "Сақтау"
+  },
+  "edit-account-modal": {
+    "title": "Өңдеу",
+    "personal-info": {
+      "title": "Жеке ақпарат",
+      "text": "Аты-жөні, байланыстары, мекен-жайы"
+    },
+    "hunting-license": {
+      "title": "Аңшылық куәлігі",
+      "text": "Нөмірі, қолданылу мерзімі"
+    },
+    "identity-card": {
+      "title": "Жеке куәлік",
+      "text": "ЖСН, нөмірі, берілген"
+    }
+  },
+  "form": {
+    "necessarily": "Міндетті",
+    "not-necessarily": "Міндетті емес",
+    "progress-bar": {
+      "title": "Тіркелгі жасау",
+      "personal-data": "Дербес деректер",
+      "identification": "Жеке куәлік",
+      "address": "Мекен-жайы",
+      "hunting-license": "Аңшылық куәлігі"
+    },
+    "personal-data": {
+      "title": "Жеке деректер",
+      "lastname": "Тегі",
+      "firstname": "Аты",
+      "patronymic": "Әкесінің аты",
+      "dateOfBirth": "Туған күні",
+      "gender": "Еден",
+      "male": "Еркек",
+      "female": "Әйел",
+      "phoneNumber": "Телефон нөмірі",
+      "button": "Келесі"
+    },
+    "address": {
+      "title": "Мекен-жайы",
+      "region": "Облыс",
+      "city": "Қала",
+      "street": "Көше / Шағын Аудан",
+      "houseNumber": "Үй",
+      "flatNumber": "Пәтер",
+      "button": "Келесі"
+    },
+    "identification": {
+      "title": "Жеке куәлік",
+      "iin": "ЖСН",
+      "identificationNumber": "Нөмірі",
+      "identificationIssued": "Берілген",
+      "identificationValid": "Дейін жарамды",
+      "identificationIssuedBy": "Кім",
+      "choose-from-list": "Тізімнен таңдаңыз",
+      "button": "Келесі"
+    },
+    "hunting-license": {
+      "title": "Аңшы куәлігі",
+      "huntingLicenseNumber": "Нөмірі",
+      "huntingLicenseIssued": "Берілген",
+      "huntingLicenseValid": "Дейін жарамды",
+      "button": "Келесі"
+    }
+  }
+}

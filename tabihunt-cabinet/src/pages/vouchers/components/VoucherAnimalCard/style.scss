@@ -1,0 +1,53 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.voucher-limit-card {
+  @include Frame;
+  margin: 20px 0;
+
+  h3 {
+    @include Typography($font-size-3, 600, $color-dark-gray);
+  }
+
+  h4 {
+    @include Typography($font-size-4, 600, $color-dark-gray);
+    margin-bottom: 15px;
+  }
+
+  &__head,
+  &__period {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-stroke-gray;
+    margin-bottom: 20px;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .row {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__prices {
+    .box {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+
+      span {
+        white-space: nowrap; /* Запрещает перенос текста на новую строку */
+        overflow: hidden; /* Обрезает текст, который не помещается */
+        text-overflow: ellipsis; /* Добавляет троеточие в конце обрезанного текста */
+        width: 100%;
+        margin-bottom: 5px;
+      }
+
+      &.full-width {
+        width: 100%;
+      }
+    }
+  }
+}

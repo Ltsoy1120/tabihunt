@@ -1,0 +1,34 @@
+@import "@/assets/scss/bundle.scss";
+
+.report-success-modal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  &__title {
+    @include Typography(20px, 600, $color-gray-dark);
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+
+  &__text {
+    @include Typography($font-size-3, 400, $color-gray-dark);
+    line-height: 24px;
+
+    span {
+      @include Typography($font-size-3, 600, $color-gray-dark);
+    }
+  }
+
+  .button {
+    width: 400px;
+    height: 50px;
+
+    @include Mobile {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}

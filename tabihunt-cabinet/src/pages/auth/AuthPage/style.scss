@@ -1,0 +1,52 @@
+@import "../../../assets/scss/bundle.scss";
+
+.auth {
+  height: 100%;
+  display: flex;
+  padding: 2rem;
+
+  &__img,
+  &__main {
+    width: 50%;
+  }
+
+  &__img {
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+
+    img {
+      width: 140px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+  }
+
+  &__form {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    button {
+      width: 100%;
+      height: 56px;
+      box-sizing: border-box;
+    }
+  }
+}

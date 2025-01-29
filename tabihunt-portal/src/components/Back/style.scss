@@ -1,0 +1,22 @@
+@import "@/assets/scss/bundle.scss";
+
+.back {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // padding: 10px 15px 10px 12px;
+  // background: $color-gray-bg;
+  // border-radius: $border-radius;
+
+  @include Mobile {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+  cursor: pointer;
+
+  span {
+    margin-left: 5px;
+    @include Typography($font-size-3, 500, $color-gray-medium);
+  }
+}

@@ -1,0 +1,14 @@
+@import "@/assets/scss/bundle.scss";
+
+.error-info {
+  width: 100%;
+  height: 56px;
+  padding: 10px;
+  background: $color-red-light;
+  border-radius: $border-radius;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include Typography($font-size-3, 400, $color-red);
+}

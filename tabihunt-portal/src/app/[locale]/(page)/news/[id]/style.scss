@@ -1,0 +1,8 @@
+@import "@/assets/scss/base.scss";
+
+.news-page {
+  p {
+    margin-top: 40px;
+    @include Typography($font-size-2, 400, $color-gray-dark);
+  }
+}

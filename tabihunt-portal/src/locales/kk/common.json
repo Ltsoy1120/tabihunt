@@ -1,0 +1,103 @@
+{
+  "header": {
+    "login-btn": "Кіру"
+  },
+  "page-header": {
+    "voucher": "Жолдама",
+    "hunting-society": "Аңшылық қоғамы",
+    "plot-description": "Аңшылық алқабы"
+  },
+  "form-header": {
+    "purchased-voucher": {
+      "report": "Табиғи ресурстарды нақты алып қою жөніндегі есеп",
+      "report-mobile": "Есеп",
+      "send-btn": "Жіберу"
+    },
+    "account": {
+      "personal-data": "Жеке ақпарат",
+      "hunting-license": "Аңшы куәлігі",
+      "identification": "Жеке куәлік",
+      "address": "Мекен-жайы",
+      "save-btn": "Сақтау",
+      "empty-data-btn": "Деректерді толтырыңыз"
+    },
+    "voucher": {
+      "stage1": "1 кезең",
+      "stage2": "2 кезең",
+      "stage3": "3 кезең",
+      "stage4": "4 кезең",
+      "stage5": "5 кезең",
+      "payment": "Төлем",
+      "continue-btn": "Келесі",
+      "payment-btn": "Төлеу"
+    },
+    "membership-renew": {
+      "stage1": "1 кезең",
+      "stage2": "2 кезең",
+      "stage3": "3 кезең",
+      "payment": "Төлем",
+      "continue-btn": "Келесі",
+      "renew-btn": "Ұзарту"
+    }
+  },
+  "sidebar": {
+    "main": "Басты бет",
+    "vouchers": "Жолдамалар",
+    "hunting-societies": "Қауымдастықтар",
+    "plot-descriptions": "Аңшылық",
+    "map": "Карта",
+    "partners": "Серіктестерге",
+    "me-account": "Менің тіркелгім",
+    "me-reports": "Менің есептерім",
+    "me-vouchers": "Менің жолдамаларым",
+    "login-btn": "Кіру",
+    "logout-btn": "Шығу"
+  },
+  "mobile-panel": {
+    "main": "Басты бет",
+    "vouchers": "Жолдамалар",
+    "me-account": "Менің тіркелгім",
+    "notifications": "Хабарламалар",
+    "login-btn": "Кіру",
+    "logout-btn": "Шығу"
+  },
+  "footer": {
+    "text": "Қосылыңыз Tabihunt.kz аңшылық бизнесте жаңа мүмкіндіктерді ашыңыз!",
+    "documents": {
+      "title": "Құжаттар",
+      "offer-agreement": "Оферта шарты",
+      "privacy-policy": "Құпиялылық саясаты",
+      "online-payments": "Онлайн төлемдер"
+    },
+    "regulatory-framework": {
+      "title": "Нормативтік-құқықтық база",
+      "animal-protection": "Жануарларды қорғау және қорғау",
+      "hunting-rules": "Аң аулау ережелері",
+      "rules-for-vouchers": "Жолдама беру ережесі",
+      "rules-for-weapons": "Қару айналымы ережелері"
+    },
+    "contacts": { "title": "Байланыс" },
+    "pages": {
+      "title": "Беттер",
+      "main": "Басты бет",
+      "vouchers": "Жолдамалар",
+      "hunting-societies": "Қауымдастықтар",
+      "plot-descriptions": "Аңшылық",
+      "map": "Карта",
+      "partners": "Серіктестерге"
+    },
+    "copyrighter": "Барлық құқықтар ЖШС \"Tabihunt\" нұсқасымен қорғалған"
+  },
+  "data-selector": {
+    "day": "Күн",
+    "month": "Ай",
+    "year": "Жыл"
+  },
+  "file-input": {
+    "upload-file": "Файлды жүктеп алыңыз",
+    "upload-drag-file": "Файлды жүктеңіз немесе оны осы жерге сүйреңіз",
+    "choose-file": "Файлды таңдаңыз"
+  },
+  "back": "Қайту",
+  "loader": "Күте тұрыңыз, деректер жүктелуде"
+}

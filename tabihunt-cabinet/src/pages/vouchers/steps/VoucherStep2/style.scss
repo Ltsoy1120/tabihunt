@@ -1,0 +1,73 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.new-voucher-step2 {
+  display: flex;
+  gap: 20px;
+
+  .add-huntsmen,
+  .selected-huntsmen {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    @include Frame;
+  }
+
+  h2 {
+    @include Typography(21px, 500, $color-dark-gray);
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-stroke-gray;
+  }
+
+  .huntsmen-list {
+    max-height: calc(100svh - 330px);
+    // overflow-y: auto;
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+      padding-right: 10px;
+      border-top: 1px solid $color-stroke-gray;
+
+      &-info {
+        p {
+          @include Typography($font-size-3, 600, $color-dark-gray);
+          margin-bottom: 10px;
+        }
+
+        .row {
+          display: flex;
+          gap: 20px;
+        }
+      }
+
+      .chosen {
+        color: $color-light-gray;
+      }
+
+      .button {
+        width: 120px;
+        height: 40px;
+        color: $color-main;
+        background: $color-main-light;
+      }
+    }
+
+    p {
+      @include Typography($font-size-3, 200, $color-dark-gray);
+    }
+  }
+
+  .selected-huntsmen__head {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      padding-bottom: 5px;
+      border-bottom: none;
+    }
+  }
+}

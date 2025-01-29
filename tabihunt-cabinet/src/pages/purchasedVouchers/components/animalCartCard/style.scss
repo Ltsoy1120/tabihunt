@@ -1,0 +1,77 @@
+@import "../../../../assets/scss/bundle.scss";
+.CartAnimalTitle {
+    h2 {
+        text-align: left;
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+.CartAnimalWrapper {
+    @include Frame;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.CartAnimalDescription {
+    h2 {
+        text-align: center;
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+.CounterBtnCart {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    margin: 20px auto 0 auto;
+    border: 1px solid #dfe3ea;
+    border-radius: 30px;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    p {
+        color: $color-main;
+    }
+    button {
+        opacity: 0.5;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+}
+
+.animalCart > div {
+    display: flex;
+    height: 90px;
+    flex-direction: column;
+    border-top: none;
+    h2{
+        margin-bottom: 10px;
+    }
+
+}
+.animalCart> .CartAnimalDescription {
+    width:100%;
+    padding: 0;
+    h2 {
+        padding: 0;
+        margin-top: 10px;
+    }
+    .CounterBtnCart {
+        margin: 0;
+       
+    }
+}
+.animalCart>.CartAnimalTitle:first-child {
+    
+    h2 {
+        height: 10px;
+    }
+    span {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+}

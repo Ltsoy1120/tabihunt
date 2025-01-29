@@ -1,0 +1,44 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.limits-card {
+  @include Frame;
+  padding: 15px;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $color-stroke-gray;
+
+    h3 {
+      @include Typography($font-size-3, 600, $color-dark-gray);
+      margin-top: 15px;
+    }
+
+    .btns {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+
+    &-item {
+      width: 100%;
+      padding-left: 15px;
+      border-left: 1px solid $color-stroke-gray;
+      span {
+        display: block;
+        padding-bottom: 5px;
+      }
+    }
+
+    &-item:first-child {
+      padding-left: 0;
+      border-left: none;
+    }
+  }
+}

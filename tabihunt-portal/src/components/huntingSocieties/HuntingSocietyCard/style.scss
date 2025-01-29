@@ -1,0 +1,111 @@
+@import "@/assets/scss/base.scss";
+
+.huntingSociety-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  &__img {
+    min-width: 250px;
+    height: 250px;
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &__info {
+    @include Frame;
+    padding: 15px;
+  }
+
+  &__head {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-gray-stroke;
+    margin-bottom: 20px;
+
+    h3 {
+      @include Typography($font-size-2, 500, $color-gray-dark);
+      margin-bottom: 10px;
+    }
+
+    .about {
+      display: -webkit-box;
+      -webkit-line-clamp: 4; /* Количество строк, после которых текст будет обрезан */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis; /* Добавляет троеточие на конце */
+    }
+  }
+
+  h4 {
+    @include Typography($font-size-3, 500, $color-gray-dark);
+    margin-bottom: 10px;
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &-item {
+      @include Typography($font-size-3, 500, $color-gray-dark);
+      display: flex;
+      color: $color-gray-medium;
+
+      .icon {
+        margin-right: 10px;
+        min-width: 20px;
+      }
+
+      img {
+        width: 20px;
+        margin-right: 10px;
+      }
+
+      p {
+        @include Typography($font-size-3, 500, $color-gray-dark);
+      }
+    }
+
+    .button {
+      margin-top: auto;
+    }
+  }
+
+  @include Mobile {
+    flex-direction: column;
+    height: auto;
+
+    &__info {
+      width: 100%;
+    }
+
+    &__contacts {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      .col {
+        width: 100% !important;
+      }
+      a {
+        width: 100%;
+      }
+      .button {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Менің есептерім",
+  "subtitle": "Табиғи ресурстарды нақты алып қою жөніндегі есеп",
+  "voucher-search": "Жолдама нөмірі бойынша іздеу",
+  "card": {
+    "voucher-number": "Жолдама нөмірі",
+    "voucher-report-mobile-btn": "Есеп",
+    "voucher-report-btn": "Жолдама туралы есеп",
+    "create-voucher-report-btn": "Жолдама туралы есеп жасаңыз"
+  },
+  "report-table": {
+    "date": "Күні",
+    "voucher-number": "Жолдама нөмірі",
+    "animal-type": "Ойын түрі",
+    "animals-number": "Саны",
+    "plot": "Аңшылық алқабы"
+  },
+  "report-btn-mobile": "Жіберу",
+  "empty": "Сізде әлі сатып алынған билеттер жоқ"
+}
